@@ -1,5 +1,5 @@
 
-from symbolic_module.core.SymbolicModuleManager import SymbolicModuleManager
+from symbolic_module.core.SymbolicModuleManager import SymbolicModuleManager, execute_mov, parse_mov
 import z3
 def my_callback(insn, solver, options):
     """
@@ -76,11 +76,37 @@ def main():
     # 5) Надрукувати
     manager.printSlice(SL)
 
+    def my_callback(insn, solver, options, env):
+        mnemonic = insn.mnemonic.lower()
+        if mnemonic == "mov":
+            line = f"mov {insn.op_str}"
+            try:
+                dest_info, src_info, dest_f, src_f = parse_mov(line)
+            except ValueError as e:
+                print(f"[my_callback] parse error: {e}")
+                return
+
+            print(dest_info, src_info, dest_f, src_f)  # debug
+            print(f"[my_callback] => MOV({dest_f}, {src_f})")
+
+            # do your environment copy:
+            execute_mov(env, dest_info, src_info)
+        else:
+            # ...
+            pass
+
+        #else:
+            #print(f"[my_callback] skipping {mnemonic} {insn.op_str}")
+
+    # 5) Symbolic modeling over CF or slices
+    manager.model(CF, options={"verbose":True}, callback=my_callback)
+
     # 6) Виконати символьне моделювання (етап 2):
     #    Наприклад, по всьому CFG:
-    #print("\n--- Symbolic Modeling over CF ---")
-    #CFG_REUSLT1 = manager.model(CF, reachProperty=None, options={"verbose": True}, callback=my_callback)
-    #print(CFG_REUSLT1)
+    print("\n--- Symbolic Modeling over CF ---")
+    CFG_REUSLT1 = manager.model(CF, reachProperty=None, options={"verbose": True}, callback=my_callback)
+    print(CFG_REUSLT1)
+
 
     #    Або по нашому «слайсу» (SL):
     #print("\n--- Symbolic Modeling over SL ---")
