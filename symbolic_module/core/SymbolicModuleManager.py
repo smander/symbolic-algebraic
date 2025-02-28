@@ -477,6 +477,217 @@ class SymbolicModuleManager:
             print("[getSlice] No pattern elements found, returning empty slices.")
             return []
 
+    def exportCfg(self, cfg, output_file, format='dot', highlight_slices=None, directory=None):
+        """
+        Export CFG to DOT format with enhanced visualization.
+
+        Args:
+            cfg: The CFG object returned by getControlFlow()
+            output_file: Name of the output file
+            format: 'dot' or 'json'
+            highlight_slices: Optional list of slices to highlight in the CFG
+            directory: Directory to save the file (default: current directory)
+        """
+        import os
+
+        # Create directory if it doesn't exist
+        if directory and not os.path.exists(directory):
+            try:
+                os.makedirs(directory)
+                print(f"Created directory: {directory}")
+            except Exception as e:
+                print(f"Error creating directory {directory}: {e}")
+                return False
+
+        file_path = os.path.join(directory, output_file) if directory else output_file
+
+        try:
+            # Create set of highlighted addresses
+            highlighted_addrs = set()
+            if highlight_slices:
+                for slice in highlight_slices:
+                    if isinstance(slice, list) and len(slice) > 0:
+                        if hasattr(slice[0], 'address'):
+                            for insn in slice:
+                                highlighted_addrs.add(insn.address)
+                        elif isinstance(slice[0], list):
+                            for block in slice:
+                                for insn in block:
+                                    if hasattr(insn, 'address'):
+                                        highlighted_addrs.add(insn.address)
+
+            if format.lower() == 'dot':
+                with open(file_path, 'w') as f:
+                    # Start the DOT file with better default settings
+                    f.write('digraph CFG {\n')
+                    f.write('  bgcolor="white";\n')
+                    f.write('  node [shape=none, fontname="Courier New", fontsize=10];\n')
+                    f.write('  edge [color="#555555", fontcolor="#555555", fontsize=9];\n')
+                    f.write('  rankdir=TB;\n')  # Top to bottom layout
+                    f.write('  compound=true;\n')
+
+                    # Define some colors
+                    control_flow_color = "#4285F4"  # Blue for jumps/calls
+                    highlighted_color = "#EA4335"  # Red for highlighted instructions
+                    normal_color = "#333333"  # Dark gray for normal instructions
+                    header_color = "#FBBC05"  # Yellow for block headers
+
+                    # Process each node (basic block)
+                    for node in cfg.graph.nodes():
+                        try:
+                            block = self.cfg_analysis.project.factory.block(node.addr)
+
+                            # Check if any instruction in this block is highlighted
+                            block_highlighted = any(insn.address in highlighted_addrs for insn in block.capstone.insns)
+
+                            # Create an HTML-like label for better formatting
+                            label = f'<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">\n'
+
+                            # Add block header
+                            header_style = f' BGCOLOR="{header_color}"' if block_highlighted else ' BGCOLOR="#DDDDDD"'
+                            label += f'  <TR><TD PORT="header" COLSPAN="3"{header_style}><B>Block {hex(node.addr)}</B></TD></TR>\n'
+
+                            # Column headers
+                            label += f'  <TR><TD>Address</TD><TD>Instruction</TD><TD>Operands</TD></TR>\n'
+
+                            # Add each instruction
+                            for insn in block.capstone.insns:
+                                # Determine cell color based on instruction type and highlighting
+                                cell_color = normal_color
+                                if insn.address in highlighted_addrs:
+                                    cell_color = highlighted_color
+                                elif insn.mnemonic in (
+                                'call', 'jmp', 'je', 'jne', 'jg', 'jl', 'jge', 'jle', 'ja', 'jb', 'jae', 'jbe'):
+                                    cell_color = control_flow_color
+
+                                # Escape HTML entities
+                                mnemonic = insn.mnemonic.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+                                op_str = insn.op_str.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
+                                # Add the instruction row
+                                label += f'  <TR><TD PORT="addr_{insn.address}" ALIGN="LEFT">{hex(insn.address)}</TD>'
+                                label += f'<TD ALIGN="LEFT"><FONT COLOR="{cell_color}">{mnemonic}</FONT></TD>'
+                                label += f'<TD ALIGN="LEFT"><FONT COLOR="{cell_color}">{op_str}</FONT></TD></TR>\n'
+
+                            # Close the table
+                            label += '</TABLE>>'
+
+                            # Add the node with the HTML-like label
+                            border_color = highlighted_color if block_highlighted else "#999999"
+                            f.write(
+                                f'  node_{node.addr} [label={label}, color="{border_color}", penwidth={2 if block_highlighted else 1}];\n')
+
+                        except Exception as e:
+                            print(f"Error processing block at {hex(node.addr)}: {e}")
+                            # Fallback for error cases
+                            f.write(
+                                f'  node_{node.addr} [label="Block at {hex(node.addr)} (error)", shape=box, style=filled, fillcolor="#FFCCCC"];\n')
+
+                    # Process edges with better formatting
+                    for src, dst in cfg.graph.edges():
+                        # Check if it's a jump to a non-sequential block
+                        is_jump = False
+                        try:
+                            src_block = self.cfg_analysis.project.factory.block(src.addr)
+                            last_insn = src_block.capstone.insns[-1]
+                            if last_insn.mnemonic in (
+                            'jmp', 'je', 'jne', 'jg', 'jl', 'jge', 'jle', 'ja', 'jb', 'jae', 'jbe'):
+                                is_jump = True
+                        except:
+                            pass
+
+                        # Format edge based on type
+                        if is_jump:
+                            f.write(
+                                f'  node_{src.addr} -> node_{dst.addr} [color="{control_flow_color}", style="dashed", penwidth=1.5];\n')
+                        else:
+                            f.write(f'  node_{src.addr} -> node_{dst.addr} [color="#555555"];\n')
+
+                    f.write('}\n')
+
+                print(f"Enhanced CFG exported to {file_path} in DOT format.")
+                print(f"To visualize: Run 'dot -Tpng -o cfg.png {file_path}' or 'dot -Tsvg -o cfg.svg {file_path}'")
+                return True
+
+            elif format.lower() == 'json':
+                # Similar to previous code, with improved JSON structure
+                import json
+
+                cfg_data = {
+                    "nodes": [],
+                    "edges": [],
+                    "metadata": {
+                        "total_nodes": len(cfg.graph.nodes()),
+                        "total_edges": len(cfg.graph.edges()),
+                        "highlighted_addresses": list(map(hex, highlighted_addrs))
+                    }
+                }
+
+                for node in cfg.graph.nodes():
+                    node_data = {
+                        "address": hex(node.addr),
+                        "instructions": [],
+                        "is_highlighted": False
+                    }
+
+                    try:
+                        block = self.cfg_analysis.project.factory.block(node.addr)
+
+                        for insn in block.capstone.insns:
+                            is_highlighted = insn.address in highlighted_addrs
+                            node_data["is_highlighted"] |= is_highlighted
+
+                            node_data["instructions"].append({
+                                "address": hex(insn.address),
+                                "mnemonic": insn.mnemonic,
+                                "operands": insn.op_str,
+                                "bytes": insn.bytes.hex(),
+                                "is_highlighted": is_highlighted,
+                                "is_control_flow": insn.mnemonic in (
+                                'call', 'jmp', 'je', 'jne', 'jg', 'jl', 'jge', 'jle', 'ja', 'jb', 'jae', 'jbe')
+                            })
+                    except Exception as e:
+                        print(f"Error getting instructions for block at {hex(node.addr)}: {e}")
+
+                    cfg_data["nodes"].append(node_data)
+
+                for src, dst in cfg.graph.edges():
+                    # Determine edge type
+                    edge_type = "sequential"
+                    try:
+                        src_block = self.cfg_analysis.project.factory.block(src.addr)
+                        last_insn = src_block.capstone.insns[-1]
+                        if last_insn.mnemonic == 'jmp':
+                            edge_type = "unconditional_jump"
+                        elif last_insn.mnemonic.startswith('j'):
+                            edge_type = "conditional_jump"
+                        elif last_insn.mnemonic == 'call':
+                            edge_type = "call"
+                    except:
+                        pass
+
+                    cfg_data["edges"].append({
+                        "source": hex(src.addr),
+                        "target": hex(dst.addr),
+                        "type": edge_type
+                    })
+
+                with open(file_path, 'w') as f:
+                    json.dump(cfg_data, f, indent=2)
+
+                print(f"Enhanced CFG exported to {file_path} in JSON format.")
+                return True
+
+            else:
+                print(f"Unsupported export format: {format}. Use 'dot' or 'json'.")
+                return False
+
+        except Exception as e:
+            print(f"Error exporting CFG: {e}")
+            import traceback
+            traceback.print_exc()
+            return False
+
     # 5. PR = SL.printSlice(option)
     def printSlice(self, SL, option=None):
         """

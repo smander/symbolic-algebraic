@@ -45,7 +45,7 @@ If dependencies are missing, the script will prompt you to install them at runti
 ## Usage
 
 ```
-./run.py [-h] [--pattern-names PATTERN_NAMES [PATTERN_NAMES ...]]
+./run.py [-h] 
                  [--export {text,json,none}] [--output-dir OUTPUT_DIR]
                  [--print]
                  binary pattern
@@ -58,7 +58,6 @@ If dependencies are missing, the script will prompt you to install them at runti
 
 ### Optional Arguments
 
-- `--pattern-names`: Specify which patterns by name to process; otherwise processes all patterns found.
 - `--export {text,json,none}`: Choose an export format (default: `none`).  
   - `text`: Exports slices to a `.txt` file in `--output-dir`.
   - `json`: (Placeholder if you implement JSON export).
