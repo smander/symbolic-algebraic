@@ -1,0 +1,6 @@
+MyPattern1
+syscall.X.syscall
+
+MyPattern3
+B0 = syscall.S
+S  = $X.syscall

@@ -1,0 +1,12 @@
+# Create a requirements.txt file
+echo "angr
+pyvex
+claripy" > requirements.txt
+
+# Install all dependencies
+pip install -r requirements.txt
+pandas~=2.0.0
+scikit-learn~=1.2.2
+imblearn~=0.0
+setuptools~=75.6.0
+angr~=9.2.102
