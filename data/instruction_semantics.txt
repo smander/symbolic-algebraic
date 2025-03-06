@@ -1,0 +1,21 @@
+# instruction_semantics.txt
+
+# Data Movement Instructions
+MOV P1, P2
+P1 = P2
+
+SYSCALL P1, P2
+P1 = P2
+
+MOVZX P1, P2
+P1 = P2
+
+MOVSX P1, P2
+P1 = P2
+
+CMOVZ P1, P2
+FLAGS[6] == 1 => P1 = P2
+FLAGS[6] != 1 => NOTHING
+
+CMP	P1, P2
+P1 = P2
