@@ -9,7 +9,7 @@ def main():
 
     # 2) Збудувати CFG
     CF = manager.getControlFlow()
-    manager.exportCfg(CF, "cfg.txt", directory="export")
+    manager.exportCfg(CF, "cfg.json", directory="export", format="json")
 
     patterns_dict = manager.loadPattern("data/demo_pattern.txt")
     #   MyPattern1 => Behavior("MyPattern1", elements=[...])
