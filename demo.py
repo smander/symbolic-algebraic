@@ -25,29 +25,29 @@ def main():
         manager.printSlice(slices)
 
         # Perform symbolic modeling with semantics file
-        print(f"\n--- Symbolic Modeling for pattern: {pattern_name} ---")
-        symbolic_results = manager.symbolic_modeling(
-            slices,
-            options={"verbose": False, "semantics_file": "data/instruction_semantics.txt"}
-        )
+        #print(f"\n--- Symbolic Modeling for pattern: {pattern_name} ---")
+        #symbolic_results = manager.symbolic_modeling(
+        #    slices,
+        #   options={"verbose": False, "semantics_file": "data/instruction_semantics.txt"}
+        #)
 
         # Display results
-        print("Symbolic execution results:")
-        print(f"  Registers:")
-        for reg_name, reg_val in symbolic_results['registers'].items():
-            print(f"    {reg_name}: {reg_val.name}")
+        #print("Symbolic execution results:")
+        #print(f"  Registers:")
+        #for reg_name, reg_val in symbolic_results['registers'].items():
+        #    print(f"    {reg_name}: {reg_val.name}")
 
-        print(f"  Flags:")
-        for i, flag in enumerate(symbolic_results['flags']):
-            if flag is None:
-                print(f"    Flag[{i}]: None")
-            else:
-                print(f"    Flag[{i}]: {flag.name}")
+        #print(f"  Flags:")
+        #for i, flag in enumerate(symbolic_results['flags']):
+        #    if flag is None:
+        #        print(f"    Flag[{i}]: None")
+        #    else:
+        #        print(f"    Flag[{i}]: {flag.name}")
 
-        print(f"  Path constraints: {len(symbolic_results['constraints'])}")
-        for i, constraint in enumerate(symbolic_results['constraints']):
-            if i < 5:  # Only show first 5 constraints
-                print(f"    {constraint}")
+        #print(f"  Path constraints: {len(symbolic_results['constraints'])}")
+        #for i, constraint in enumerate(symbolic_results['constraints']):
+        #    if i < 5:  # Only show first 5 constraints
+         #       print(f"    {constraint}")
 
         # else:
         # print(f"[my_callback] skipping {mnemonic} {insn.op_str}")

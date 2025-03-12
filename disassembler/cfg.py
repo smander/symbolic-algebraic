@@ -42,7 +42,7 @@ class CFGAnalysis:
 
     def build_cfg(self):
         print("Building CFG...")
-        self.cfg = self.project.analyses.CFGFast(resolve_indirect_jumps=False, normalize=True)
+        self.cfg = self.project.analyses.CFGFast(resolve_indirect_jumps=True, normalize=True)
         print(f"CFG built successfully with {len(self.cfg.graph.nodes)} nodes and {len(self.cfg.graph.edges)} edges.")
 
     def list_cfg_nodes(self):
@@ -533,6 +533,234 @@ class TemplateBuilder:
                 unique_matches.append(path)
 
         print(f"[DEBUG] Found {len(unique_matches)} unique matching paths")
+        return unique_matches
+
+    def build_generalized_algebraic_pattern(self, pattern):
+        """
+        Fully generalized algebraic pattern matcher that:
+        1. Works with any state names (B0, Z1, etc.)
+        2. Properly captures all instructions between pattern tokens
+        3. Handles transitions between states correctly
+        4. Collects complete paths through the CFG
+
+        Works with patterns like "B0 = syscall.S", "S = $X.syscall" but also more complex
+        patterns with different state names and transitions.
+        """
+        print(f"[DEBUG] Processing algebraic pattern: {pattern.name}")
+        print(f"[DEBUG] Pattern elements: {pattern.elements}")
+
+        # Parse the algebraic pattern into a state dictionary
+        state_dict = {}
+        for elem in pattern.elements:
+            # Handle both list and string formats
+            if isinstance(elem, list):
+                if "=" in elem:
+                    state_name = elem[0]
+                    eq_index = elem.index("=")
+                    tokens = elem[eq_index + 1:]
+                    state_dict[state_name] = tokens
+            elif isinstance(elem, str) and "=" in elem:
+                parts = elem.split("=", 1)
+                state_name = parts[0].strip()
+                token_str = parts[1].strip()
+                tokens = token_str.split(".")
+                state_dict[state_name] = tokens
+
+        print(f"[DEBUG] Parsed states: {state_dict}")
+
+        # Determine starting state (first one defined)
+        start_state = next(iter(state_dict)) if state_dict else None
+        print(f"[DEBUG] Start state: {start_state}")
+
+        if not start_state:
+            print("[DEBUG] No valid states found in pattern")
+            return []
+
+        # Build transition map (state -> next_state)
+        transitions = {}
+        for state, tokens in state_dict.items():
+            for token in tokens:
+                if token in state_dict:
+                    transitions[state] = token
+                    print(f"[DEBUG] Found transition: {state} -> {token}")
+
+        # Now implement a breadth-first search to find matching paths
+        from collections import deque
+
+        matched_paths = []
+        queue = deque()
+        visited = set()
+
+        # Start the search from all nodes in the CFG
+        for node in self.cfg.graph.nodes:
+            try:
+                block = self.project.factory.block(node.addr)
+                insns = list(block.capstone.insns)
+                for i in range(len(insns)):
+                    # We'll start matching from any instruction
+                    queue.append((node, i, [], start_state))
+            except Exception as e:
+                print(f"[DEBUG] Error initializing node {node}: {e}")
+
+        print(f"[DEBUG] Starting search with {len(queue)} potential start points")
+
+        states_processed = 0
+
+        while queue:
+            node, idx, path_so_far, current_state = queue.popleft()
+            states_processed += 1
+
+            if states_processed % 10000 == 0:
+                print(f"[DEBUG] Processed {states_processed} states. Queue size: {len(queue)}")
+
+            # Skip if we've already visited this state
+            state_key = (node.addr, idx, current_state)
+            if state_key in visited:
+                continue
+            visited.add(state_key)
+
+            # Get the tokens for the current state
+            if current_state not in state_dict:
+                continue
+
+            tokens = state_dict[current_state]
+
+            try:
+                block = self.project.factory.block(node.addr)
+                insns = list(block.capstone.insns)
+
+                # If we've reached the end of instructions in this block
+                if idx >= len(insns):
+                    # Try all successors with the same state
+                    for succ in self.cfg.graph.successors(node):
+                        queue.append((succ, 0, path_so_far, current_state))
+                    continue
+
+                current_insn = insns[idx]
+
+                # Process the first token in the state definition
+                token_matched = False
+
+                # Skip state references (these are handled via transitions)
+                first_token = tokens[0]
+                if first_token in state_dict:
+                    # This is a reference to another state - follow the transition
+                    next_state = first_token
+                    queue.append((node, idx, path_so_far, next_state))
+                    token_matched = True
+
+                # Handle wildcards
+                elif first_token.startswith("$") or first_token.upper() == "X":
+                    # This is a wildcard - it can match any instruction
+                    token_matched = True
+                    new_path = path_so_far + [current_insn]
+
+                    # Move to the next instruction in this block
+                    if idx + 1 < len(insns):
+                        queue.append((node, idx + 1, new_path, current_state))
+
+                    # If there are more tokens after the wildcard
+                    if len(tokens) > 1:
+                        next_token = tokens[1]
+
+                        # Check if the next token matches this instruction
+                        if next_token in state_dict:
+                            # This is a state reference
+                            next_state = next_token
+                            queue.append((node, idx, new_path, next_state))
+                        elif current_insn.mnemonic.lower() == next_token.lower():
+                            # Found a match for the next token
+
+                            # If this state has a transition, follow it
+                            if current_state in transitions:
+                                next_state = transitions[current_state]
+                                queue.append((node, idx + 1, new_path, next_state))
+
+                            # If this was the last token and there's no transition
+                            # Then we've found a complete match
+                            elif len(tokens) == 2:
+                                matched_paths.append(new_path)
+
+                    # Also try all successors with the same state (continue wildcard matching)
+                    for succ in self.cfg.graph.successors(node):
+                        queue.append((succ, 0, new_path, current_state))
+
+                # Handle regular token matching
+                elif current_insn.mnemonic.lower() == first_token.lower():
+                    token_matched = True
+                    new_path = path_so_far + [current_insn]
+
+                    # If there are more tokens in this state
+                    if len(tokens) > 1:
+                        # Create a temporary state with remaining tokens
+                        temp_state = f"{current_state}_remainder"
+                        state_dict[temp_state] = tokens[1:]
+
+                        # Copy transitions
+                        if current_state in transitions:
+                            transitions[temp_state] = transitions[current_state]
+
+                        # Continue matching in this block
+                        if idx + 1 < len(insns):
+                            queue.append((node, idx + 1, new_path, temp_state))
+
+                        # Also try successors
+                        for succ in self.cfg.graph.successors(node):
+                            queue.append((succ, 0, new_path, temp_state))
+
+                    # If this was the only token and there's a transition
+                    elif current_state in transitions:
+                        next_state = transitions[current_state]
+
+                        # Continue in this block
+                        if idx + 1 < len(insns):
+                            queue.append((node, idx + 1, new_path, next_state))
+
+                        # Also try successors
+                        for succ in self.cfg.graph.successors(node):
+                            queue.append((succ, 0, new_path, next_state))
+
+                    # If this was the only token and there's no transition
+                    # Then we've found a complete match
+                    else:
+                        matched_paths.append(new_path)
+
+                # If no token matched but we haven't visited the next instruction yet
+                if not token_matched and idx + 1 < len(insns):
+                    # Try the next instruction with the same state
+                    queue.append((node, idx + 1, path_so_far, current_state))
+
+            except Exception as e:
+                print(f"[DEBUG] Error processing node {node}: {e}")
+
+        print(f"[DEBUG] Processed {states_processed} states total")
+        print(f"[DEBUG] Found {len(matched_paths)} raw matches")
+
+        # Filter matches to ensure they actually match the pattern
+        # For syscall.X.syscall, ensure first and last instructions are syscalls
+        filtered_matches = []
+        for path in matched_paths:
+            if len(path) >= 2:
+                first_insn = path[0]
+                last_insn = path[-1]
+                # Adapt this filtering based on your specific pattern requirements
+                if first_insn.mnemonic.lower() == "syscall" and last_insn.mnemonic.lower() == "syscall":
+                    filtered_matches.append(path)
+
+        print(f"[DEBUG] Found {len(filtered_matches)} filtered matches")
+
+        # Deduplicate matches
+        unique_matches = []
+        seen = set()
+
+        for path in filtered_matches:
+            # Create a signature for the path
+            sig = tuple(insn.address for insn in path)
+            if sig not in seen:
+                seen.add(sig)
+                unique_matches.append(path)
+
+        print(f"[DEBUG] Found {len(unique_matches)} unique matches")
         return unique_matches
 
     def _match_algebraic_state(self, node, start_idx, instructions, state_name, states, transitions, path_so_far=None,

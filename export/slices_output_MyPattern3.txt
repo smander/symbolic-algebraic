@@ -1,4 +1,4 @@
-=== Exported 16 Slices ===
+=== Exported 179 Slices ===
 
 Slice 0:
   Step 0: 0x465117:	syscall	
@@ -6,78 +6,2414 @@ Slice 0:
   Step 2: 0x465117:	syscall	
 
 Slice 1:
-  Step 0: 0x40f59b:	syscall	
-  Step 1: 0x40f5a2:	mov	eax, 0xea
-  Step 2: 0x40f5a7:	syscall	
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x40f58a:	mov	ecx, 0x27
+  Step 2: 0x40f58f:	mov	eax, ecx
+  Step 3: 0x40f591:	syscall	
 
 Slice 2:
-  Step 0: 0x45443c:	syscall	
-  Step 1: 0x454437:	mov	eax, 0x19
-  Step 2: 0x45443c:	syscall	
+  Step 0: 0x40f591:	syscall	
+  Step 1: 0x40f593:	mov	rdi, rax
+  Step 2: 0x40f596:	mov	eax, 0xba
+  Step 3: 0x40f59b:	syscall	
 
 Slice 3:
-  Step 0: 0x487e7c:	syscall	
-  Step 1: 0x487e77:	mov	eax, 0x11
-  Step 2: 0x487e7c:	syscall	
+  Step 0: 0x450b29:	syscall	
+  Step 1: 0x450b20:	endbr64	
+  Step 2: 0x450b24:	mov	eax, 0x18
+  Step 3: 0x450b29:	syscall	
 
 Slice 4:
-  Step 0: 0x4517d7:	syscall	
-  Step 1: 0x4517d2:	mov	eax, 0x48
-  Step 2: 0x4517d7:	syscall	
+  Step 0: 0x450f09:	syscall	
+  Step 1: 0x450f00:	endbr64	
+  Step 2: 0x450f04:	mov	eax, 8
+  Step 3: 0x450f09:	syscall	
 
 Slice 5:
-  Step 0: 0x451865:	syscall	
-  Step 1: 0x451860:	mov	eax, 0x48
-  Step 2: 0x451865:	syscall	
+  Step 0: 0x451739:	syscall	
+  Step 1: 0x451730:	endbr64	
+  Step 2: 0x451734:	mov	eax, 3
+  Step 3: 0x451739:	syscall	
 
 Slice 6:
-  Step 0: 0x465389:	syscall	
-  Step 1: 0x465384:	mov	eax, 0xe
-  Step 2: 0x465389:	syscall	
+  Step 0: 0x451a29:	syscall	
+  Step 1: 0x451a20:	endbr64	
+  Step 2: 0x451a24:	mov	eax, 1
+  Step 3: 0x451a29:	syscall	
 
 Slice 7:
-  Step 0: 0x47792a:	syscall	
-  Step 1: 0x477925:	mov	eax, 0xe4
-  Step 2: 0x47792a:	syscall	
+  Step 0: 0x451c79:	syscall	
+  Step 1: 0x451c70:	endbr64	
+  Step 2: 0x451c74:	mov	eax, 0xb
+  Step 3: 0x451c79:	syscall	
 
 Slice 8:
-  Step 0: 0x4809ff:	syscall	
-  Step 1: 0x4809fa:	mov	eax, 0x14
-  Step 2: 0x4809ff:	syscall	
+  Step 0: 0x451ca9:	syscall	
+  Step 1: 0x451ca0:	endbr64	
+  Step 2: 0x451ca4:	mov	eax, 0xa
+  Step 3: 0x451ca9:	syscall	
 
 Slice 9:
-  Step 0: 0x41b133:	syscall	
-  Step 1: 0x41b130:	mov	eax, r9d
-  Step 2: 0x41b133:	syscall	
+  Step 0: 0x451cd9:	syscall	
+  Step 1: 0x451cd0:	endbr64	
+  Step 2: 0x451cd4:	mov	eax, 0x1c
+  Step 3: 0x451cd9:	syscall	
 
 Slice 10:
-  Step 0: 0x40290a:	syscall	
-  Step 1: 0x402905:	mov	eax, 0x9e
-  Step 2: 0x40290a:	syscall	
+  Step 0: 0x454469:	syscall	
+  Step 1: 0x454460:	endbr64	
+  Step 2: 0x454464:	mov	eax, 0x63
+  Step 3: 0x454469:	syscall	
 
 Slice 11:
-  Step 0: 0x487e39:	syscall	
-  Step 1: 0x487e34:	mov	eax, 0xd9
-  Step 2: 0x487e39:	syscall	
+  Step 0: 0x478019:	syscall	
+  Step 1: 0x478010:	endbr64	
+  Step 2: 0x478014:	mov	eax, 0x3f
+  Step 3: 0x478019:	syscall	
 
 Slice 12:
-  Step 0: 0x40f5c9:	syscall	
-  Step 1: 0x40f5c4:	mov	eax, 0xe
-  Step 2: 0x40f5c9:	syscall	
+  Step 0: 0x478049:	syscall	
+  Step 1: 0x478040:	endbr64	
+  Step 2: 0x478044:	mov	eax, 0x66
+  Step 3: 0x478049:	syscall	
 
 Slice 13:
-  Step 0: 0x4781b8:	syscall	
-  Step 1: 0x4781b3:	mov	eax, 0x10
-  Step 2: 0x4781b8:	syscall	
+  Step 0: 0x478059:	syscall	
+  Step 1: 0x478050:	endbr64	
+  Step 2: 0x478054:	mov	eax, 0x6b
+  Step 3: 0x478059:	syscall	
 
 Slice 14:
-  Step 0: 0x48b0cf:	syscall	
-  Step 1: 0x48b0cc:	and	esi, 2
-  Step 2: 0x48b0cf:	syscall	
+  Step 0: 0x478069:	syscall	
+  Step 1: 0x478060:	endbr64	
+  Step 2: 0x478064:	mov	eax, 0x68
+  Step 3: 0x478069:	syscall	
 
 Slice 15:
+  Step 0: 0x478079:	syscall	
+  Step 1: 0x478070:	endbr64	
+  Step 2: 0x478074:	mov	eax, 0x6c
+  Step 3: 0x478079:	syscall	
+
+Slice 16:
+  Step 0: 0x478269:	syscall	
+  Step 1: 0x478260:	endbr64	
+  Step 2: 0x478264:	mov	eax, 0xc
+  Step 3: 0x478269:	syscall	
+
+Slice 17:
+  Step 0: 0x487e69:	syscall	
+  Step 1: 0x487e60:	endbr64	
+  Step 2: 0x487e64:	mov	eax, 0x27
+  Step 3: 0x487e69:	syscall	
+
+Slice 18:
+  Step 0: 0x48bc99:	syscall	
+  Step 1: 0x48bc90:	endbr64	
+  Step 2: 0x48bc94:	mov	eax, 0x26
+  Step 3: 0x48bc99:	syscall	
+
+Slice 19:
+  Step 0: 0x4651e4:	syscall	
+  Step 1: 0x4651d9:	mov	r10d, 8
+  Step 2: 0x4651df:	mov	eax, 0xd
+  Step 3: 0x4651e4:	syscall	
+
+Slice 20:
+  Step 0: 0x451040:	syscall	
+  Step 1: 0x451038:	mov	rdi, rbp
+  Step 2: 0x45103b:	mov	eax, 0x4f
+  Step 3: 0x451040:	syscall	
+
+Slice 21:
+  Step 0: 0x4505e4:	syscall	
+  Step 1: 0x4505e0:	mov	edi, edx
+  Step 2: 0x4505e2:	mov	eax, esi
+  Step 3: 0x4505e4:	syscall	
+
+Slice 22:
+  Step 0: 0x4028b4:	syscall	
+  Step 1: 0x4028b0:	xor	edi, edi
+  Step 2: 0x4028b2:	mov	eax, edx
+  Step 3: 0x4028b4:	syscall	
+
+Slice 23:
+  Step 0: 0x40f59b:	syscall	
+  Step 1: 0x40f59d:	mov	esi, eax
+  Step 2: 0x40f59f:	mov	edx, r8d
+  Step 3: 0x40f5a2:	mov	eax, 0xea
+  Step 4: 0x40f5a7:	syscall	
+
+Slice 24:
+  Step 0: 0x45443c:	syscall	
+  Step 1: 0x454430:	endbr64	
+  Step 2: 0x454434:	mov	r10, rcx
+  Step 3: 0x454437:	mov	eax, 0x19
+  Step 4: 0x45443c:	syscall	
+
+Slice 25:
+  Step 0: 0x487e7c:	syscall	
+  Step 1: 0x487e70:	endbr64	
+  Step 2: 0x487e74:	mov	r10, rcx
+  Step 3: 0x487e77:	mov	eax, 0x11
+  Step 4: 0x487e7c:	syscall	
+
+Slice 26:
+  Step 0: 0x4517d7:	syscall	
+  Step 1: 0x4517c8:	lea	rdx, [rsp + 8]
+  Step 2: 0x4517cd:	mov	esi, 0x10
+  Step 3: 0x4517d2:	mov	eax, 0x48
+  Step 4: 0x4517d7:	syscall	
+
+Slice 27:
+  Step 0: 0x451865:	syscall	
+  Step 1: 0x451858:	mov	rdx, rsp
+  Step 2: 0x45185b:	mov	esi, 0x10
+  Step 3: 0x451860:	mov	eax, 0x48
+  Step 4: 0x451865:	syscall	
+
+Slice 28:
+  Step 0: 0x465389:	syscall	
+  Step 1: 0x46537b:	mov	r10d, 8
+  Step 2: 0x465381:	mov	rsi, r8
+  Step 3: 0x465384:	mov	eax, 0xe
+  Step 4: 0x465389:	syscall	
+
+Slice 29:
+  Step 0: 0x47792a:	syscall	
+  Step 1: 0x477920:	mov	rsi, r12
+  Step 2: 0x477923:	mov	edi, ebp
+  Step 3: 0x477925:	mov	eax, 0xe4
+  Step 4: 0x47792a:	syscall	
+
+Slice 30:
+  Step 0: 0x4809ff:	syscall	
+  Step 1: 0x4809ed:	mov	edi, dword ptr [rbp - 0x460]
+  Step 2: 0x4809f3:	lea	rsi, [rbp - 0x430]
+  Step 3: 0x4809fa:	mov	eax, 0x14
+  Step 4: 0x4809ff:	syscall	
+
+Slice 31:
+  Step 0: 0x41b133:	syscall	
+  Step 1: 0x41b128:	mov	rsi, rbx
+  Step 2: 0x41b12b:	mov	edi, 2
+  Step 3: 0x41b130:	mov	eax, r9d
+  Step 4: 0x41b133:	syscall	
+
+Slice 32:
+  Step 0: 0x40290a:	syscall	
+  Step 1: 0x4028fe:	mov	esi, edx
+  Step 2: 0x402900:	mov	edi, 0x3002
+  Step 3: 0x402905:	mov	eax, 0x9e
+  Step 4: 0x40290a:	syscall	
+
+Slice 33:
+  Step 0: 0x41aeb8:	syscall	
+  Step 1: 0x41aea8:	mov	edx, 1
+  Step 2: 0x41aead:	mov	rsi, rbx
+  Step 3: 0x41aeb0:	mov	edi, 2
+  Step 4: 0x41aeb5:	mov	eax, r9d
+  Step 5: 0x41aeb8:	syscall	
+
+Slice 34:
+  Step 0: 0x465117:	syscall	
+  Step 1: 0x465100:	nop	
+  Step 2: 0x465101:	nop	word ptr cs:[rax + rax]
+  Step 3: 0x46510c:	nop	dword ptr [rax]
+  Step 4: 0x465110:	mov	rax, 0xf
+  Step 5: 0x465117:	syscall	
+
+Slice 35:
+  Step 0: 0x450dd0:	syscall	
+  Step 1: 0x450dd2:	cmp	rax, -0x1000
+  Step 2: 0x450dda:	ret	
+  Step 3: 0x401f55:	test	rax, rax
+  Step 4: 0x401f68:	lea	rcx, [rbp - 0x10]
+  Step 5: 0x450dc0:	endbr64	
+  Step 6: 0x450dd0:	syscall	
+
+Slice 36:
+  Step 0: 0x451c2e:	syscall	
+  Step 1: 0x451c30:	mov	rdi, rax
+  Step 2: 0x451c3b:	mov	rax, 0xffffffffffffffc0
+  Step 3: 0x451bd9:	mov	r10d, ebx
+  Step 4: 0x451bdc:	mov	rdi, rbp
+  Step 5: 0x451bdf:	mov	eax, 9
+  Step 6: 0x451be4:	syscall	
+
+Slice 37:
+  Step 0: 0x40290a:	syscall	
+  Step 1: 0x40290c:	test	eax, eax
+  Step 2: 0x40291a:	mov	eax, dword ptr [rip + 0xc0ed4]
+  Step 3: 0x40292f:	xor	esi, esi
+  Step 4: 0x402931:	mov	edi, 0x3003
+  Step 5: 0x402936:	mov	eax, 0x9e
+  Step 6: 0x40293b:	syscall	
+
+Slice 38:
+  Step 0: 0x487e39:	syscall	
+  Step 1: 0x487e20:	endbr64	
+  Step 2: 0x487e24:	cmp	rdx, 0x7fffffff
+  Step 3: 0x487e2b:	mov	eax, 0x7fffffff
+  Step 4: 0x487e30:	cmova	rdx, rax
+  Step 5: 0x487e34:	mov	eax, 0xd9
+  Step 6: 0x487e39:	syscall	
+
+Slice 39:
+  Step 0: 0x40f5c9:	syscall	
+  Step 1: 0x40f5b4:	mov	r10d, 8
+  Step 2: 0x40f5ba:	xor	edx, edx
+  Step 3: 0x40f5bc:	mov	rsi, r9
+  Step 4: 0x40f5bf:	mov	edi, 2
+  Step 5: 0x40f5c4:	mov	eax, 0xe
+  Step 6: 0x40f5c9:	syscall	
+
+Slice 40:
+  Step 0: 0x40290a:	syscall	
+  Step 1: 0x4028f9:	or	eax, 2
+  Step 2: 0x4028fc:	mov	edx, eax
+  Step 3: 0x4028fe:	mov	esi, edx
+  Step 4: 0x402900:	mov	edi, 0x3002
+  Step 5: 0x402905:	mov	eax, 0x9e
+  Step 6: 0x40290a:	syscall	
+
+Slice 41:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x41016a:	add	rbx, 8
+  Step 3: 0x410173:	mov	edi, ebp
+  Step 4: 0x4505c0:	endbr64	
+  Step 5: 0x4505ef:	mov	edi, edx
+  Step 6: 0x4505f1:	mov	eax, r8d
+  Step 7: 0x4505f4:	syscall	
+
+Slice 42:
+  Step 0: 0x450dd0:	syscall	
+  Step 1: 0x450dd2:	cmp	rax, -0x1000
+  Step 2: 0x450dda:	ret	
+  Step 3: 0x402005:	test	rax, rax
+  Step 4: 0x402018:	mov	eax, dword ptr [rbp - 0xa4]
+  Step 5: 0x450f30:	endbr64	
+  Step 6: 0x450f40:	mov	eax, 3
+  Step 7: 0x450f45:	syscall	
+
+Slice 43:
+  Step 0: 0x478098:	syscall	
+  Step 1: 0x47809a:	cmp	rax, -0x1000
+  Step 2: 0x4780a2:	ret	
+  Step 3: 0x4510ca:	test	eax, eax
+  Step 4: 0x4510d2:	mov	rax, qword ptr [rsp + 0x60]
+  Step 5: 0x478080:	endbr64	
+  Step 6: 0x478093:	mov	eax, 6
+  Step 7: 0x478098:	syscall	
+
+Slice 44:
+  Step 0: 0x451a62:	syscall	
+  Step 1: 0x451a50:	endbr64	
+  Step 2: 0x451a54:	mov	r10, rsi
+  Step 3: 0x451a57:	xor	edx, edx
+  Step 4: 0x451a59:	mov	esi, edi
+  Step 5: 0x451a5b:	mov	eax, 0x12e
+  Step 6: 0x451a60:	xor	edi, edi
+  Step 7: 0x451a62:	syscall	
+
+Slice 45:
+  Step 0: 0x451739:	syscall	
+  Step 1: 0x45173b:	cmp	rax, -0x1000
+  Step 2: 0x451743:	ret	
+  Step 3: 0x4511a3:	test	eax, eax
+  Step 4: 0x4511ab:	mov	rax, qword ptr [rsp + 0x60]
+  Step 5: 0x477f50:	endbr64	
+  Step 6: 0x450c30:	endbr64	
+  Step 7: 0x450c42:	mov	eax, 5
+  Step 8: 0x450c47:	syscall	
+
+Slice 46:
+  Step 0: 0x4519f6:	syscall	
+  Step 1: 0x4519f8:	cmp	rax, -0x1000
+  Step 2: 0x451a00:	ret	
+  Step 3: 0x46453d:	test	rax, rax
+  Step 4: 0x464520:	sub	r15, rax
+  Step 5: 0x46452f:	mov	rdx, r15
+  Step 6: 0x4519f0:	endbr64	
+  Step 7: 0x4519f4:	xor	eax, eax
+  Step 8: 0x4519f6:	syscall	
+
+Slice 47:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421266:	nop	
+  Step 4: 0x421267:	xor	r10d, r10d
+  Step 5: 0x42126a:	mov	edx, 2
+  Step 6: 0x42126f:	mov	esi, 0x80
+  Step 7: 0x421274:	mov	eax, 0xca
+  Step 8: 0x421279:	syscall	
+
+Slice 48:
+  Step 0: 0x450c47:	syscall	
+  Step 1: 0x450c49:	cmp	rax, -0x1000
+  Step 2: 0x450c51:	ret	
+  Step 3: 0x477f85:	test	eax, eax
+  Step 4: 0x477f89:	mov	eax, dword ptr [rsp + 0x18]
+  Step 5: 0x477f99:	mov	esi, 3
+  Step 6: 0x451760:	endbr64	
+  Step 7: 0x45179e:	mov	eax, 0x48
+  Step 8: 0x4517a3:	syscall	
+
+Slice 49:
+  Step 0: 0x475761:	syscall	
+  Step 1: 0x475763:	mov	eax, dword ptr fs:[0x308]
+  Step 2: 0x47573b:	and	eax, 0xc
+  Step 3: 0x475744:	mov	rdi, qword ptr fs:[0]
+  Step 4: 0x47574d:	mov	eax, 0xca
+  Step 5: 0x475752:	xor	r10, r10
+  Step 6: 0x475755:	add	rdi, 0x308
+  Step 7: 0x47575c:	mov	esi, 0x80
+  Step 8: 0x475761:	syscall	
+
+Slice 50:
+  Step 0: 0x40143b:	syscall	
+  Step 1: 0x40143d:	jmp	0x40141a
+  Step 2: 0x40141a:	mov	rdi, r8
+  Step 3: 0x401422:	xchg	dword ptr [rdi], eax
+  Step 4: 0x401429:	xor	r10d, r10d
+  Step 5: 0x40142c:	mov	edx, 1
+  Step 6: 0x401431:	mov	esi, 0x81
+  Step 7: 0x401436:	mov	eax, 0xca
+  Step 8: 0x40143b:	syscall	
+
+Slice 51:
+  Step 0: 0x401491:	syscall	
+  Step 1: 0x401493:	jmp	0x401470
+  Step 2: 0x401470:	mov	rdi, r8
+  Step 3: 0x401478:	xchg	dword ptr [rdi], eax
+  Step 4: 0x40147f:	xor	r10d, r10d
+  Step 5: 0x401482:	mov	edx, 1
+  Step 6: 0x401487:	mov	esi, 0x81
+  Step 7: 0x40148c:	mov	eax, 0xca
+  Step 8: 0x401491:	syscall	
+
+Slice 52:
+  Step 0: 0x4014e8:	syscall	
+  Step 1: 0x4014ea:	jmp	0x4014c7
+  Step 2: 0x4014c7:	mov	rdi, r8
+  Step 3: 0x4014cf:	xchg	dword ptr [rdi], eax
+  Step 4: 0x4014d6:	xor	r10d, r10d
+  Step 5: 0x4014d9:	mov	edx, 1
+  Step 6: 0x4014de:	mov	esi, 0x81
+  Step 7: 0x4014e3:	mov	eax, 0xca
+  Step 8: 0x4014e8:	syscall	
+
+Slice 53:
+  Step 0: 0x40153f:	syscall	
+  Step 1: 0x401541:	jmp	0x40151e
+  Step 2: 0x40151e:	mov	rdi, r8
+  Step 3: 0x401526:	xchg	dword ptr [rdi], eax
+  Step 4: 0x40152d:	xor	r10d, r10d
+  Step 5: 0x401530:	mov	edx, 1
+  Step 6: 0x401535:	mov	esi, 0x81
+  Step 7: 0x40153a:	mov	eax, 0xca
+  Step 8: 0x40153f:	syscall	
+
+Slice 54:
+  Step 0: 0x401596:	syscall	
+  Step 1: 0x401598:	jmp	0x401575
+  Step 2: 0x401575:	mov	rdi, r8
+  Step 3: 0x40157d:	xchg	dword ptr [rdi], eax
+  Step 4: 0x401584:	xor	r10d, r10d
+  Step 5: 0x401587:	mov	edx, 1
+  Step 6: 0x40158c:	mov	esi, 0x81
+  Step 7: 0x401591:	mov	eax, 0xca
+  Step 8: 0x401596:	syscall	
+
+Slice 55:
+  Step 0: 0x4015ef:	syscall	
+  Step 1: 0x4015f1:	jmp	0x4015ce
+  Step 2: 0x4015ce:	mov	rdi, r8
+  Step 3: 0x4015d6:	xchg	dword ptr [rdi], eax
+  Step 4: 0x4015dd:	xor	r10d, r10d
+  Step 5: 0x4015e0:	mov	edx, 1
+  Step 6: 0x4015e5:	mov	esi, 0x81
+  Step 7: 0x4015ea:	mov	eax, 0xca
+  Step 8: 0x4015ef:	syscall	
+
+Slice 56:
+  Step 0: 0x40165b:	syscall	
+  Step 1: 0x40165d:	jmp	0x40163a
+  Step 2: 0x40163a:	mov	rdi, r8
+  Step 3: 0x401642:	xchg	dword ptr [rdi], eax
+  Step 4: 0x401649:	xor	r10d, r10d
+  Step 5: 0x40164c:	mov	edx, 1
+  Step 6: 0x401651:	mov	esi, 0x81
+  Step 7: 0x401656:	mov	eax, 0xca
+  Step 8: 0x40165b:	syscall	
+
+Slice 57:
+  Step 0: 0x4016b1:	syscall	
+  Step 1: 0x4016b3:	jmp	0x401690
+  Step 2: 0x401690:	mov	rdi, r8
+  Step 3: 0x401698:	xchg	dword ptr [rdi], eax
+  Step 4: 0x40169f:	xor	r10d, r10d
+  Step 5: 0x4016a2:	mov	edx, 1
+  Step 6: 0x4016a7:	mov	esi, 0x81
+  Step 7: 0x4016ac:	mov	eax, 0xca
+  Step 8: 0x4016b1:	syscall	
+
+Slice 58:
+  Step 0: 0x401707:	syscall	
+  Step 1: 0x401709:	jmp	0x4016e6
+  Step 2: 0x4016e6:	mov	rdi, r8
+  Step 3: 0x4016ee:	xchg	dword ptr [rdi], eax
+  Step 4: 0x4016f5:	xor	r10d, r10d
+  Step 5: 0x4016f8:	mov	edx, 1
+  Step 6: 0x4016fd:	mov	esi, 0x81
+  Step 7: 0x401702:	mov	eax, 0xca
+  Step 8: 0x401707:	syscall	
+
+Slice 59:
+  Step 0: 0x40f5a7:	syscall	
+  Step 1: 0x40f5a9:	cmp	rax, -0x1000
+  Step 2: 0x40f5b1:	mov	r8d, eax
+  Step 3: 0x40f5b4:	mov	r10d, 8
+  Step 4: 0x40f5ba:	xor	edx, edx
+  Step 5: 0x40f5bc:	mov	rsi, r9
+  Step 6: 0x40f5bf:	mov	edi, 2
+  Step 7: 0x40f5c4:	mov	eax, 0xe
+  Step 8: 0x40f5c9:	syscall	
+
+Slice 60:
+  Step 0: 0x451a29:	syscall	
+  Step 1: 0x451a2b:	cmp	rax, -0x1000
+  Step 2: 0x451a33:	ret	
+  Step 3: 0x41c043:	test	rax, rax
+  Step 4: 0x41c022:	sub	rbx, rax
+  Step 5: 0x41c02d:	mov	edi, dword ptr [r13 + 0x70]
+  Step 6: 0x41c018:	call	0x450e60
+  Step 7: 0x450e60:	endbr64	
+  Step 8: 0x450e70:	mov	eax, 1
+  Step 9: 0x450e75:	syscall	
+
+Slice 61:
+  Step 0: 0x478049:	syscall	
+  Step 1: 0x47804b:	ret	
+  Step 2: 0x4560bd:	mov	r8d, eax
+  Step 3: 0x4560ca:	mov	dword ptr [rip + 0x699d0], eax
+  Step 4: 0x4024b7:	mov	rdi, qword ptr [rip + 0xc081a]
+  Step 5: 0x454940:	endbr64	
+  Step 6: 0x454e6e:	xor	esi, esi
+  Step 7: 0x454e70:	lea	rdi, [rip + 0x44281]
+  Step 8: 0x454e77:	mov	eax, 0x15
+  Step 9: 0x454e7c:	syscall	
+
+Slice 62:
+  Step 0: 0x4262b9:	syscall	
+  Step 1: 0x4262bb:	jmp	0x426277
+  Step 2: 0x426277:	mov	rdi, qword ptr [rdi + 0x870]
+  Step 3: 0x426268:	mov	eax, dword ptr fs:[0x18]
+  Step 4: 0x4262a0:	mov	eax, r9d
+  Step 5: 0x4262aa:	xor	r10d, r10d
+  Step 6: 0x4262ad:	mov	edx, 1
+  Step 7: 0x4262b2:	mov	esi, 0x81
+  Step 8: 0x4262b7:	mov	eax, ebx
+  Step 9: 0x4262b9:	syscall	
+
+Slice 63:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x418556:	xor	r8d, r8d
+  Step 3: 0x41856a:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 4: 0x41857c:	mov	qword ptr [rdi + 8], 0
+  Step 5: 0x4185d0:	xchg	dword ptr [rdi], eax
+  Step 6: 0x4185d7:	xor	r10d, r10d
+  Step 7: 0x4185da:	mov	edx, 1
+  Step 8: 0x4185df:	mov	esi, 0x81
+  Step 9: 0x4185e4:	mov	eax, 0xca
+  Step 10: 0x4185e9:	syscall	
+
+Slice 64:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x473ba1:	cmp	rax, -1
+  Step 3: 0x473bb4:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 4: 0x473bc1:	mov	qword ptr [rdi + 8], 0
+  Step 5: 0x473c78:	xor	eax, eax
+  Step 6: 0x473c85:	xor	r10d, r10d
+  Step 7: 0x473c88:	mov	edx, 1
+  Step 8: 0x473c8d:	mov	esi, 0x81
+  Step 9: 0x473c92:	mov	eax, 0xca
+  Step 10: 0x473c97:	syscall	
+
+Slice 65:
+  Step 0: 0x450f09:	syscall	
+  Step 1: 0x450f0b:	cmp	rax, -0x1000
+  Step 2: 0x450f13:	ret	
+  Step 3: 0x477db1:	pxor	xmm0, xmm0
+  Step 4: 0x477e00:	xor	eax, eax
+  Step 5: 0x477e0a:	xor	r10d, r10d
+  Step 6: 0x477e0d:	mov	edx, 1
+  Step 7: 0x477e12:	mov	esi, 0x81
+  Step 8: 0x477e17:	mov	rdi, rbp
+  Step 9: 0x477e1a:	mov	eax, 0xca
+  Step 10: 0x477e1f:	syscall	
+
+Slice 66:
+  Step 0: 0x450dd0:	syscall	
+  Step 1: 0x450dd2:	cmp	rax, -0x1000
+  Step 2: 0x450dda:	ret	
+  Step 3: 0x402005:	test	rax, rax
+  Step 4: 0x402018:	mov	eax, dword ptr [rbp - 0xa4]
+  Step 5: 0x450f30:	endbr64	
+  Step 6: 0x450f50:	sub	rsp, 0x18
+  Step 7: 0x450f5d:	mov	edi, dword ptr [rsp + 0xc]
+  Step 8: 0x450f61:	mov	r8d, eax
+  Step 9: 0x450f64:	mov	eax, 3
+  Step 10: 0x450f69:	syscall	
+
+Slice 67:
+  Step 0: 0x478098:	syscall	
+  Step 1: 0x47809a:	cmp	rax, -0x1000
+  Step 2: 0x4780a2:	ret	
+  Step 3: 0x4510fe:	test	eax, eax
+  Step 4: 0x451106:	lea	rdi, [r12 - 1]
+  Step 5: 0x451141:	mov	qword ptr [rsp + 0x20], rbp
+  Step 6: 0x45115e:	mov	edi, r13d
+  Step 7: 0x451950:	endbr64	
+  Step 8: 0x451972:	mov	eax, edx
+  Step 9: 0x451983:	mov	eax, 0x101
+  Step 10: 0x451988:	syscall	
+
+Slice 68:
+  Step 0: 0x4262b9:	syscall	
+  Step 1: 0x4262bb:	jmp	0x426277
+  Step 2: 0x426277:	mov	rdi, qword ptr [rdi + 0x870]
+  Step 3: 0x426283:	mov	eax, dword ptr fs:[0x18]
+  Step 4: 0x4262c8:	xor	eax, eax
+  Step 5: 0x4262d5:	xor	r10d, r10d
+  Step 6: 0x4262d8:	mov	edx, 1
+  Step 7: 0x4262dd:	mov	esi, 0x81
+  Step 8: 0x4262e2:	mov	eax, 0xca
+  Step 9: 0x4262e7:	lea	rdi, [rip + 0x9c9b2]
+  Step 10: 0x4262ee:	syscall	
+
+Slice 69:
+  Step 0: 0x41e11d:	syscall	
+  Step 1: 0x41e11f:	jmp	0x41e068
+  Step 2: 0x41e068:	mov	eax, dword ptr [rip + 0xa4bc6]
+  Step 3: 0x41e079:	mov	qword ptr [rip + 0xa4bb4], 0
+  Step 4: 0x41e0a0:	xchg	dword ptr [rip + 0xa4b8a], eax
+  Step 5: 0x41e0ab:	xor	r10d, r10d
+  Step 6: 0x41e0ae:	mov	edx, 1
+  Step 7: 0x41e0b3:	mov	esi, 0x81
+  Step 8: 0x41e0b8:	mov	eax, 0xca
+  Step 9: 0x41e0bd:	lea	rdi, [rip + 0xa4b6c]
+  Step 10: 0x41e0c4:	syscall	
+
+Slice 70:
+  Step 0: 0x477f29:	syscall	
+  Step 1: 0x477f2b:	jmp	0x477ef1
+  Step 2: 0x477ef1:	pop	rbx
+  Step 3: 0x4511f0:	test	rax, rax
+  Step 4: 0x4511f9:	test	byte ptr [rax + 0x12], 0xfb
+  Step 5: 0x4511ff:	cmp	byte ptr [rax + 0x13], 0x2e
+  Step 6: 0x451209:	mov	rdx, qword ptr [rsp]
+  Step 7: 0x4512e8:	lea	rbp, [rax + 0x13]
+  Step 8: 0x4780e0:	endbr64	
+  Step 9: 0x4780f8:	mov	eax, 0x106
+  Step 10: 0x4780fd:	syscall	
+
+Slice 71:
+  Step 0: 0x41e703:	syscall	
+  Step 1: 0x41e705:	mov	edx, dword ptr [rip + 0xa4529]
+  Step 2: 0x41e5b2:	mov	qword ptr [rip + 0xa4663], 0
+  Step 3: 0x41e5c8:	mov	qword ptr [rip + 0xa4665], 0
+  Step 4: 0x41e690:	xchg	dword ptr [rip + 0xa459a], edx
+  Step 5: 0x41e69f:	xor	r10d, r10d
+  Step 6: 0x41e6a2:	mov	edx, 1
+  Step 7: 0x41e6a7:	mov	esi, 0x81
+  Step 8: 0x41e6ac:	mov	eax, 0xca
+  Step 9: 0x41e6b1:	lea	rdi, [rip + 0xa4578]
+  Step 10: 0x41e6b8:	syscall	
+
+Slice 72:
+  Step 0: 0x4781b8:	syscall	
+  Step 1: 0x478190:	endbr64	
+  Step 2: 0x478194:	sub	rsp, 0x38
+  Step 3: 0x478198:	mov	r8, rsi
+  Step 4: 0x47819b:	mov	esi, 0x5401
+  Step 5: 0x4781a0:	mov	rax, qword ptr fs:[0x28]
+  Step 6: 0x4781a9:	mov	qword ptr [rsp + 0x28], rax
+  Step 7: 0x4781ae:	xor	eax, eax
+  Step 8: 0x4781b0:	mov	rdx, rsp
+  Step 9: 0x4781b3:	mov	eax, 0x10
+  Step 10: 0x4781b8:	syscall	
+
+Slice 73:
+  Step 0: 0x48b0cf:	syscall	
+  Step 1: 0x48b0b0:	cmp	r8b, 1
+  Step 2: 0x48b0b4:	mov	edi, 0x3002
+  Step 3: 0x48b0b9:	mov	eax, 0x9e
+  Step 4: 0x48b0be:	sbb	edx, edx
+  Step 5: 0x48b0c0:	and	edx, 0xfffffffe
+  Step 6: 0x48b0c3:	sub	edx, 1
+  Step 7: 0x48b0c6:	cmp	r8b, 1
+  Step 8: 0x48b0ca:	sbb	esi, esi
+  Step 9: 0x48b0cc:	and	esi, 2
+  Step 10: 0x48b0cf:	syscall	
+
+Slice 74:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x47397b:	mov	r8d, 1
+  Step 3: 0x473986:	test	dword ptr [rbx], 0x8000
+  Step 4: 0x4739b3:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 5: 0x4739c5:	mov	qword ptr [rdi + 8], 0
+  Step 6: 0x473a20:	xchg	dword ptr [rdi], eax
+  Step 7: 0x473a2b:	xor	r10d, r10d
+  Step 8: 0x473a2e:	mov	edx, 1
+  Step 9: 0x473a33:	mov	esi, 0x81
+  Step 10: 0x473a38:	mov	eax, 0xca
+  Step 11: 0x473a3d:	syscall	
+
+Slice 75:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x41b6a5:	jmp	0x41b507
+  Step 3: 0x41b507:	test	dword ptr [r12], 0x8000
+  Step 4: 0x41b511:	mov	rdi, qword ptr [r12 + 0x88]
+  Step 5: 0x41b524:	mov	qword ptr [rdi + 8], 0
+  Step 6: 0x41b700:	xchg	dword ptr [rdi], eax
+  Step 7: 0x41b70b:	xor	r10d, r10d
+  Step 8: 0x41b70e:	mov	edx, 1
+  Step 9: 0x41b713:	mov	esi, 0x81
+  Step 10: 0x41b718:	mov	eax, 0xca
+  Step 11: 0x41b71d:	syscall	
+
+Slice 76:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x40281e:	xor	edi, edi
+  Step 3: 0x402827:	lea	rdi, [rsp + 0x70]
+  Step 4: 0x402831:	endbr64	
+  Step 5: 0x402887:	call	0
+  Step 6: 0x40288c:	mov	rax, 0
+  Step 7: 0x4028a1:	mov	edx, 0x3c
+  Step 8: 0x4028a6:	nop	word ptr cs:[rax + rax]
+  Step 9: 0x4028b0:	xor	edi, edi
+  Step 10: 0x4028b2:	mov	eax, edx
+  Step 11: 0x4028b4:	syscall	
+
+Slice 77:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x472d67:	cmp	ebp, eax
+  Step 3: 0x472d72:	test	dword ptr [rbx], 0x8000
+  Step 4: 0x472d7a:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 5: 0x472d8c:	mov	qword ptr [rdi + 8], 0
+  Step 6: 0x472ea0:	xchg	dword ptr [rdi], eax
+  Step 7: 0x472eab:	xor	r10d, r10d
+  Step 8: 0x472eae:	mov	edx, 1
+  Step 9: 0x472eb3:	mov	esi, 0x81
+  Step 10: 0x472eb8:	mov	eax, 0xca
+  Step 11: 0x472ebd:	syscall	
+
+Slice 78:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x41731a:	cmp	r13d, eax
+  Step 3: 0x417326:	test	dword ptr [rbx], 0x8000
+  Step 4: 0x41732e:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 5: 0x417340:	mov	qword ptr [rdi + 8], 0
+  Step 6: 0x417450:	xchg	dword ptr [rdi], eax
+  Step 7: 0x41745b:	xor	r10d, r10d
+  Step 8: 0x41745e:	mov	edx, 1
+  Step 9: 0x417463:	mov	esi, 0x81
+  Step 10: 0x417468:	mov	eax, 0xca
+  Step 11: 0x41746d:	syscall	
+
+Slice 79:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x4201cb:	jmp	0x42012a
+  Step 3: 0x42012a:	test	dword ptr [rbx], 0x8000
+  Step 4: 0x420132:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 5: 0x420144:	mov	qword ptr [rdi + 8], 0
+  Step 6: 0x420280:	xchg	dword ptr [rdi], eax
+  Step 7: 0x42028b:	xor	r10d, r10d
+  Step 8: 0x42028e:	mov	edx, 1
+  Step 9: 0x420293:	mov	esi, 0x81
+  Step 10: 0x420298:	mov	eax, 0xca
+  Step 11: 0x42029d:	syscall	
+
+Slice 80:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x419153:	jmp	0x418ca4
+  Step 3: 0x418ca4:	test	dword ptr [rbp], 0x8000
+  Step 4: 0x418cb1:	mov	rdi, qword ptr [rbp + 0x88]
+  Step 5: 0x418cc7:	mov	qword ptr [rdi + 8], 0
+  Step 6: 0x4191b3:	xchg	dword ptr [rdi], eax
+  Step 7: 0x4191be:	xor	r10d, r10d
+  Step 8: 0x4191c1:	mov	edx, 1
+  Step 9: 0x4191c6:	mov	esi, 0x81
+  Step 10: 0x4191cb:	mov	eax, 0xca
+  Step 11: 0x4191d0:	syscall	
+
+Slice 81:
+  Step 0: 0x451739:	syscall	
+  Step 1: 0x45173b:	cmp	rax, -0x1000
+  Step 2: 0x451743:	ret	
+  Step 3: 0x45410c:	jmp	0x454020
+  Step 4: 0x454020:	mov	esi, 0x80000
+  Step 5: 0x4518a0:	endbr64	
+  Step 6: 0x4518cc:	mov	eax, esi
+  Step 7: 0x4518da:	mov	edx, r8d
+  Step 8: 0x4518dd:	mov	rsi, r9
+  Step 9: 0x4518e0:	mov	edi, 0xffffff9c
+  Step 10: 0x4518e5:	mov	eax, 0x101
+  Step 11: 0x4518ea:	syscall	
+
+Slice 82:
+  Step 0: 0x451c79:	syscall	
+  Step 1: 0x451c7b:	cmp	rax, -0xfff
+  Step 2: 0x451c83:	ret	
+  Step 3: 0x425d19:	jmp	0x425b18
+  Step 4: 0x425b18:	mov	eax, dword ptr fs:[0x18]
+  Step 5: 0x425db0:	xor	eax, eax
+  Step 6: 0x425dc1:	xor	r10d, r10d
+  Step 7: 0x425dc4:	mov	edx, 1
+  Step 8: 0x425dc9:	mov	esi, 0x81
+  Step 9: 0x425dce:	mov	eax, 0xca
+  Step 10: 0x425dd3:	lea	rdi, [rip + 0x9a9c6]
+  Step 11: 0x425dda:	syscall	
+
+Slice 83:
+  Step 0: 0x451c79:	syscall	
+  Step 1: 0x451c7b:	cmp	rax, -0xfff
+  Step 2: 0x451c83:	ret	
+  Step 3: 0x4218fd:	jmp	0x4218a2
+  Step 4: 0x4218a2:	add	rsp, 8
+  Step 5: 0x422fcc:	mov	r15d, dword ptr [rsp + 0x1c]
+  Step 6: 0x422fdf:	xor	r10d, r10d
+  Step 7: 0x422fe2:	mov	edx, 1
+  Step 8: 0x422fe7:	mov	esi, 0x81
+  Step 9: 0x422fec:	mov	rdi, rbp
+  Step 10: 0x422fef:	mov	eax, 0xca
+  Step 11: 0x422ff4:	syscall	
+
+Slice 84:
+  Step 0: 0x451c79:	syscall	
+  Step 1: 0x451c7b:	cmp	rax, -0xfff
+  Step 2: 0x451c83:	ret	
+  Step 3: 0x4218fd:	jmp	0x4218a2
+  Step 4: 0x4218a2:	add	rsp, 8
+  Step 5: 0x42345e:	xor	eax, eax
+  Step 6: 0x42346c:	xor	r10d, r10d
+  Step 7: 0x42346f:	mov	edx, 1
+  Step 8: 0x423474:	mov	esi, 0x81
+  Step 9: 0x423479:	mov	rdi, rbp
+  Step 10: 0x42347c:	mov	eax, 0xca
+  Step 11: 0x423481:	syscall	
+
+Slice 85:
+  Step 0: 0x4809ff:	syscall	
+  Step 1: 0x480a01:	lea	rsp, [rbp - 0x28]
+  Step 2: 0x481001:	add	rsp, 0xd8
+  Step 3: 0x479449:	jmp	0x47920a
+  Step 4: 0x47920a:	mov	rdx, qword ptr [rbp + 0x20]
+  Step 5: 0x47921d:	mov	r8d, eax
+  Step 6: 0x47922d:	cmp	r8d, -1
+  Step 7: 0x479400:	cmp	qword ptr [rbp + 0x10], 0
+  Step 8: 0x479450:	mov	rax, qword ptr [rbp - 0xc8]
+  Step 9: 0x450bd0:	endbr64	
+  Step 10: 0x450be3:	mov	eax, 4
+  Step 11: 0x450be8:	syscall	
+
+Slice 86:
+  Step 0: 0x41ac0d:	syscall	
+  Step 1: 0x41ac0f:	jmp	0x41ab6b
+  Step 2: 0x41ab6b:	add	rsp, 8
+  Step 3: 0x401f03:	mov	byte ptr [rbp - 0xa5], al
+  Step 4: 0x450c90:	endbr64	
+  Step 5: 0x450cbf:	mov	eax, esi
+  Step 6: 0x450ccd:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x450cd9:	mov	edx, r12d
+  Step 8: 0x450cdc:	mov	rsi, rbp
+  Step 9: 0x450cdf:	mov	edi, 0xffffff9c
+  Step 10: 0x450ce4:	mov	eax, 0x101
+  Step 11: 0x450ce9:	syscall	
+
+Slice 87:
+  Step 0: 0x41e341:	syscall	
+  Step 1: 0x41e343:	nop	dword ptr [rax + rax]
+  Step 2: 0x41e348:	mov	edx, dword ptr [rip + 0xa48e6]
+  Step 3: 0x41e27e:	mov	qword ptr [rip + 0xa4997], 0
+  Step 4: 0x41e294:	mov	qword ptr [rip + 0xa4999], 0
+  Step 5: 0x41e3f0:	xchg	dword ptr [rip + 0xa483a], edx
+  Step 6: 0x41e3ff:	xor	r10d, r10d
+  Step 7: 0x41e402:	mov	edx, 1
+  Step 8: 0x41e407:	mov	esi, 0x81
+  Step 9: 0x41e40c:	mov	eax, 0xca
+  Step 10: 0x41e411:	lea	rdi, [rip + 0xa4818]
+  Step 11: 0x41e418:	syscall	
+
+Slice 88:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x4250cc:	mov	eax, dword ptr fs:[0x18]
+  Step 5: 0x425158:	xor	eax, eax
+  Step 6: 0x425169:	xor	r10d, r10d
+  Step 7: 0x42516c:	mov	edx, 1
+  Step 8: 0x425171:	mov	esi, 0x81
+  Step 9: 0x425176:	mov	eax, 0xca
+  Step 10: 0x42517b:	lea	rdi, [rip + 0x9b61e]
+  Step 11: 0x425182:	syscall	
+
+Slice 89:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x403d36:	mov	qword ptr [rip + 0xbe98f], 0
+  Step 5: 0x403ef0:	xor	eax, eax
+  Step 6: 0x403f09:	xor	r10d, r10d
+  Step 7: 0x403f0c:	mov	edx, 1
+  Step 8: 0x403f11:	mov	esi, 0x81
+  Step 9: 0x403f16:	mov	eax, 0xca
+  Step 10: 0x403f1b:	lea	rdi, [rip + 0xbe7b6]
+  Step 11: 0x403f22:	syscall	
+
+Slice 90:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x410103:	mov	eax, dword ptr fs:[0x18]
+  Step 5: 0x41019c:	mov	eax, r12d
+  Step 6: 0x4101ae:	xor	r10d, r10d
+  Step 7: 0x4101b1:	mov	edx, 1
+  Step 8: 0x4101b6:	mov	esi, 0x81
+  Step 9: 0x4101bb:	mov	eax, 0xca
+  Step 10: 0x4101c0:	lea	rdi, [rip + 0xb3589]
+  Step 11: 0x4101c7:	syscall	
+
+Slice 91:
+  Step 0: 0x4276f2:	syscall	
+  Step 1: 0x4276f4:	jmp	0x4275cd
+  Step 2: 0x4275cd:	test	r8, r8
+  Step 3: 0x427550:	xor	r8d, r8d
+  Step 4: 0x47e226:	mov	rbp, rax
+  Step 5: 0x47e232:	lea	rsi, [rbx + 0x7f]
+  Step 6: 0x450fc0:	endbr64	
+  Step 7: 0x451030:	test	rdi, rdi
+  Step 8: 0x451035:	mov	rbp, rdi
+  Step 9: 0x451038:	mov	rdi, rbp
+  Step 10: 0x45103b:	mov	eax, 0x4f
+  Step 11: 0x451040:	syscall	
+
+Slice 92:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x4145dd:	cmp	r15, rax
+  Step 3: 0x4142c0:	mov	r9d, 0xffffffff
+  Step 4: 0x414208:	test	dword ptr [r12], 0x8000
+  Step 5: 0x414212:	mov	rdi, qword ptr [r12 + 0x88]
+  Step 6: 0x4142f8:	mov	qword ptr [rdi + 8], 0
+  Step 7: 0x415de0:	xchg	dword ptr [rdi], eax
+  Step 8: 0x415deb:	xor	r10d, r10d
+  Step 9: 0x415dee:	mov	edx, 1
+  Step 10: 0x415df3:	mov	esi, 0x81
+  Step 11: 0x415df8:	mov	eax, 0xca
+  Step 12: 0x415dfd:	syscall	
+
+Slice 93:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x418a68:	cmp	rbx, rax
+  Step 3: 0x418a14:	mov	r8d, 0xffffffff
+  Step 4: 0x418aa2:	test	dword ptr [rbp], 0x8000
+  Step 5: 0x418aab:	mov	rdi, qword ptr [rbp + 0x88]
+  Step 6: 0x418abd:	mov	qword ptr [rdi + 8], 0
+  Step 7: 0x418b40:	xchg	dword ptr [rdi], eax
+  Step 8: 0x418b47:	xor	r10d, r10d
+  Step 9: 0x418b4a:	mov	edx, 1
+  Step 10: 0x418b4f:	mov	esi, 0x81
+  Step 11: 0x418b54:	mov	eax, 0xca
+  Step 12: 0x418b59:	syscall	
+
+Slice 94:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x4851a5:	mov	rax, qword ptr [rsp + 8]
+  Step 3: 0x48516b:	mov	rax, qword ptr [rsp + 0x108]
+  Step 4: 0x48517e:	add	rsp, 0x110
+  Step 5: 0x48dec3:	mov	r8d, eax
+  Step 6: 0x48ded5:	mov	rdi, qword ptr fs:[0x10]
+  Step 7: 0x48dede:	xor	r10d, r10d
+  Step 8: 0x48dee1:	add	rdi, 0x1c
+  Step 9: 0x48dee5:	mov	edx, 1
+  Step 10: 0x48deea:	mov	esi, 0x81
+  Step 11: 0x48deef:	mov	eax, 0xca
+  Step 12: 0x48def4:	syscall	
+
+Slice 95:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x4851a5:	mov	rax, qword ptr [rsp + 8]
+  Step 3: 0x48516b:	mov	rax, qword ptr [rsp + 0x108]
+  Step 4: 0x48517e:	add	rsp, 0x110
+  Step 5: 0x48dc84:	mov	r8d, eax
+  Step 6: 0x48dc96:	mov	rdi, qword ptr fs:[0x10]
+  Step 7: 0x48dc9f:	xor	r10d, r10d
+  Step 8: 0x48dca2:	add	rdi, 0x1c
+  Step 9: 0x48dca6:	mov	edx, 1
+  Step 10: 0x48dcab:	mov	esi, 0x81
+  Step 11: 0x48dcb0:	mov	eax, 0xca
+  Step 12: 0x48dcb5:	syscall	
+
+Slice 96:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x41fa94:	cmp	eax, -1
+  Step 3: 0x41faa0:	test	ebp, ebp
+  Step 4: 0x41faa4:	test	dword ptr [rbx], 0x8000
+  Step 5: 0x41faac:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 6: 0x41fabe:	mov	qword ptr [rdi + 8], 0
+  Step 7: 0x41fc48:	xchg	dword ptr [rdi], eax
+  Step 8: 0x41fc53:	xor	r10d, r10d
+  Step 9: 0x41fc56:	mov	edx, 1
+  Step 10: 0x41fc5b:	mov	esi, 0x81
+  Step 11: 0x41fc60:	mov	eax, 0xca
+  Step 12: 0x41fc65:	syscall	
+
+Slice 97:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x46fb57:	cmp	r13, rax
+  Step 3: 0x46fde0:	mov	r13d, 0xffffffff
+  Step 4: 0x46fd30:	test	dword ptr [r12], 0x8000
+  Step 5: 0x46fd3a:	mov	rdi, qword ptr [r12 + 0x88]
+  Step 6: 0x46fe08:	mov	qword ptr [rdi + 8], 0
+  Step 7: 0x4719a0:	xchg	dword ptr [rdi], eax
+  Step 8: 0x4719ab:	xor	r10d, r10d
+  Step 9: 0x4719ae:	mov	edx, 1
+  Step 10: 0x4719b3:	mov	esi, 0x81
+  Step 11: 0x4719b8:	mov	eax, 0xca
+  Step 12: 0x4719bd:	syscall	
+
+Slice 98:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x41fe06:	mov	eax, dword ptr [rbx + 0xc0]
+  Step 3: 0x41fe1e:	cmp	ebp, 2
+  Step 4: 0x41fe27:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 5: 0x41fe37:	mov	eax, dword ptr [rdi + 4]
+  Step 6: 0x41fe46:	mov	qword ptr [rdi + 8], 0
+  Step 7: 0x420000:	xchg	dword ptr [rdi], eax
+  Step 8: 0x42000b:	xor	r10d, r10d
+  Step 9: 0x42000e:	mov	edx, 1
+  Step 10: 0x420013:	mov	esi, 0x81
+  Step 11: 0x420018:	mov	eax, 0xca
+  Step 12: 0x42001d:	syscall	
+
+Slice 99:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x422473:	jmp	0x4222cf
+  Step 5: 0x4222cf:	mov	rax, qword ptr [rip + 0x9ed3a]
+  Step 6: 0x422421:	xor	eax, eax
+  Step 7: 0x422432:	xor	r10d, r10d
+  Step 8: 0x422435:	mov	edx, 1
+  Step 9: 0x42243a:	mov	esi, 0x81
+  Step 10: 0x42243f:	mov	eax, 0xca
+  Step 11: 0x422444:	lea	rdi, [rip + 0xa0855]
+  Step 12: 0x42244b:	syscall	
+
+Slice 100:
+  Step 0: 0x450dd0:	syscall	
+  Step 1: 0x450dd2:	cmp	rax, -0x1000
+  Step 2: 0x450dda:	ret	
+  Step 3: 0x401f55:	test	rax, rax
+  Step 4: 0x401f68:	lea	rcx, [rbp - 0x10]
+  Step 5: 0x450dc0:	endbr64	
+  Step 6: 0x450de0:	sub	rsp, 0x28
+  Step 7: 0x450df7:	mov	rdx, qword ptr [rsp + 0x18]
+  Step 8: 0x450dfc:	mov	rsi, qword ptr [rsp + 0x10]
+  Step 9: 0x450e01:	mov	r8d, eax
+  Step 10: 0x450e04:	mov	edi, dword ptr [rsp + 8]
+  Step 11: 0x450e08:	xor	eax, eax
+  Step 12: 0x450e0a:	syscall	
+
+Slice 101:
+  Step 0: 0x42029d:	syscall	
+  Step 1: 0x42029f:	jmp	0x42015f
+  Step 2: 0x42015f:	mov	qword ptr [rip + 0xa2ab6], 0
+  Step 3: 0x4201d0:	mov	eax, dword ptr [rip + 0xa2a5e]
+  Step 4: 0x4201d9:	mov	dword ptr [rip + 0xa2a55], eax
+  Step 5: 0x4201e3:	mov	qword ptr [rip + 0xa2a4a], 0
+  Step 6: 0x4202a4:	xchg	dword ptr [rip + 0xa2986], eax
+  Step 7: 0x4202b3:	xor	r10d, r10d
+  Step 8: 0x4202b6:	mov	edx, 1
+  Step 9: 0x4202bb:	mov	esi, 0x81
+  Step 10: 0x4202c0:	mov	eax, 0xca
+  Step 11: 0x4202c5:	lea	rdi, [rip + 0xa2964]
+  Step 12: 0x4202cc:	syscall	
+
+Slice 102:
+  Step 0: 0x41fc65:	syscall	
+  Step 1: 0x41fc67:	jmp	0x41fae0
+  Step 2: 0x41fae0:	mov	qword ptr [rip + 0xa3135], 0
+  Step 3: 0x41fb60:	mov	eax, dword ptr [rip + 0xa30ce]
+  Step 4: 0x41fb69:	mov	dword ptr [rip + 0xa30c5], eax
+  Step 5: 0x41fb73:	mov	qword ptr [rip + 0xa30ba], 0
+  Step 6: 0x41fbfa:	xchg	dword ptr [rip + 0xa3030], eax
+  Step 7: 0x41fc05:	xor	r10d, r10d
+  Step 8: 0x41fc08:	mov	edx, 1
+  Step 9: 0x41fc0d:	mov	esi, 0x81
+  Step 10: 0x41fc12:	mov	eax, 0xca
+  Step 11: 0x41fc17:	lea	rdi, [rip + 0xa3012]
+  Step 12: 0x41fc1e:	syscall	
+
+Slice 103:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x424fc5:	add	rsp, 8
+  Step 5: 0x425848:	mov	r8, rax
+  Step 6: 0x425990:	xor	eax, eax
+  Step 7: 0x4259a1:	xor	r10d, r10d
+  Step 8: 0x4259a4:	mov	edx, 1
+  Step 9: 0x4259a9:	mov	esi, 0x81
+  Step 10: 0x4259ae:	mov	eax, 0xca
+  Step 11: 0x4259b3:	lea	rdi, [rip + 0x9ade6]
+  Step 12: 0x4259ba:	syscall	
+
+Slice 104:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x466a45:	mov	qword ptr [rip + 0x5c4c0], 0
+  Step 5: 0x466a19:	mov	qword ptr [rip + 0x5c2b4], 0
+  Step 6: 0x466a58:	xor	eax, eax
+  Step 7: 0x466a65:	xor	r10d, r10d
+  Step 8: 0x466a68:	mov	edx, 1
+  Step 9: 0x466a6d:	mov	esi, 0x81
+  Step 10: 0x466a72:	mov	eax, 0xca
+  Step 11: 0x466a77:	lea	rdi, [rip + 0x5c4a2]
+  Step 12: 0x466a7e:	syscall	
+
+Slice 105:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x494ae5:	mov	qword ptr [rip + 0x2e420], 0
+  Step 5: 0x494a99:	mov	qword ptr [rip + 0x2e234], 0
+  Step 6: 0x494af8:	xor	eax, eax
+  Step 7: 0x494b05:	xor	r10d, r10d
+  Step 8: 0x494b08:	mov	edx, 1
+  Step 9: 0x494b0d:	mov	esi, 0x81
+  Step 10: 0x494b12:	mov	eax, 0xca
+  Step 11: 0x494b17:	lea	rdi, [rip + 0x2e402]
+  Step 12: 0x494b1e:	syscall	
+
+Slice 106:
+  Step 0: 0x4276f2:	syscall	
+  Step 1: 0x4276f4:	jmp	0x4275cd
+  Step 2: 0x4275cd:	test	r8, r8
+  Step 3: 0x427550:	xor	r8d, r8d
+  Step 4: 0x4664f1:	mov	rdx, qword ptr [rbp - 0x50]
+  Step 5: 0x4667c3:	mov	eax, dword ptr fs:[0x18]
+  Step 6: 0x4667e1:	xor	eax, eax
+  Step 7: 0x4667fe:	xor	r10d, r10d
+  Step 8: 0x466801:	mov	edx, 1
+  Step 9: 0x466806:	mov	esi, 0x81
+  Step 10: 0x46680b:	mov	eax, 0xca
+  Step 11: 0x466810:	lea	rdi, [rip + 0x5c709]
+  Step 12: 0x466817:	syscall	
+
+Slice 107:
+  Step 0: 0x42244b:	syscall	
+  Step 1: 0x42244d:	jmp	0x4222fb
+  Step 2: 0x4222fb:	mov	eax, dword ptr fs:[0x18]
+  Step 3: 0x422478:	xor	eax, eax
+  Step 4: 0x422317:	test	rbp, rbp
+  Step 5: 0x422337:	mov	eax, dword ptr fs:[0x18]
+  Step 6: 0x4223f0:	xor	eax, eax
+  Step 7: 0x422401:	xor	r10d, r10d
+  Step 8: 0x422404:	mov	edx, 1
+  Step 9: 0x422409:	mov	esi, 0x81
+  Step 10: 0x42240e:	mov	eax, 0xca
+  Step 11: 0x422413:	lea	rdi, [rip + 0xa0896]
+  Step 12: 0x42241a:	syscall	
+
+Slice 108:
+  Step 0: 0x40261d:	syscall	
+  Step 1: 0x40261f:	test	rax, rax
+  Step 2: 0x4028b8:	mov	rax, qword ptr [rsp + 0x70]
+  Step 3: 0x4028c5:	mov	dword ptr [rip + 0xc0f25], eax
+  Step 4: 0x4028d3:	mov	eax, dword ptr [rip + 0xc045f]
+  Step 5: 0x4028eb:	mov	edx, 1
+  Step 6: 0x4028f4:	mov	eax, 1
+  Step 7: 0x4028f9:	or	eax, 2
+  Step 8: 0x4028fc:	mov	edx, eax
+  Step 9: 0x4028fe:	mov	esi, edx
+  Step 10: 0x402900:	mov	edi, 0x3002
+  Step 11: 0x402905:	mov	eax, 0x9e
+  Step 12: 0x40290a:	syscall	
+
+Slice 109:
+  Step 0: 0x42001d:	syscall	
+  Step 1: 0x42001f:	jmp	0x41fd50
+  Step 2: 0x41fd50:	mov	dword ptr [rbx + 0xc0], 0xffffffff
+  Step 3: 0x41fe70:	mov	eax, dword ptr [rip + 0xa2dbe]
+  Step 4: 0x41fe79:	mov	dword ptr [rip + 0xa2db5], eax
+  Step 5: 0x41fe83:	mov	qword ptr [rip + 0xa2daa], 0
+  Step 6: 0x41ff38:	xchg	dword ptr [rip + 0xa2cf2], eax
+  Step 7: 0x41ff47:	xor	r10d, r10d
+  Step 8: 0x41ff4a:	mov	edx, 1
+  Step 9: 0x41ff4f:	mov	esi, 0x81
+  Step 10: 0x41ff54:	mov	eax, 0xca
+  Step 11: 0x41ff59:	lea	rdi, [rip + 0xa2cd0]
+  Step 12: 0x41ff60:	syscall	
+
+Slice 110:
+  Step 0: 0x41aeb8:	syscall	
+  Step 1: 0x41aeba:	cmp	rax, -4
+  Step 2: 0x41aec0:	xor	r9d, r9d
+  Step 3: 0x451bc0:	endbr64	
+  Step 4: 0x451bcd:	push	rbp
+  Step 5: 0x451c10:	test	dl, 4
+  Step 6: 0x451c15:	test	byte ptr [rip + 0x71169], 2
+  Step 7: 0x451c1e:	mov	r10d, ecx
+  Step 8: 0x451c21:	mov	ecx, 9
+  Step 9: 0x451c26:	xor	edi, edi
+  Step 10: 0x451c28:	or	r10d, 0x40
+  Step 11: 0x451c2c:	mov	eax, ecx
+  Step 12: 0x451c2e:	syscall	
+
+Slice 111:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x453585:	mov	r8, qword ptr [rsp + 8]
+  Step 3: 0x426a00:	endbr64	
+  Step 4: 0x426a18:	test	rdi, rdi
+  Step 5: 0x426a90:	add	rsp, 0x18
+  Step 6: 0x458903:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x458928:	xor	eax, eax
+  Step 8: 0x458935:	xor	r10d, r10d
+  Step 9: 0x458938:	mov	edx, 1
+  Step 10: 0x45893d:	mov	esi, 0x81
+  Step 11: 0x458942:	mov	eax, 0xca
+  Step 12: 0x458947:	lea	rdi, [rip + 0x6af62]
+  Step 13: 0x45894e:	syscall	
+
+Slice 112:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x41b8cb:	mov	rcx, qword ptr [rsp + 0x98]
+  Step 3: 0x41b8e2:	add	rsp, 0xa8
+  Step 4: 0x41abb5:	mov	r8d, eax
+  Step 5: 0x41ab35:	test	dword ptr [rbp], 0x8000
+  Step 6: 0x41ab3e:	mov	rdi, qword ptr [rbp + 0x88]
+  Step 7: 0x41ab50:	mov	qword ptr [rdi + 8], 0
+  Step 8: 0x41abf0:	xchg	dword ptr [rdi], eax
+  Step 9: 0x41abfb:	xor	r10d, r10d
+  Step 10: 0x41abfe:	mov	edx, 1
+  Step 11: 0x41ac03:	mov	esi, 0x81
+  Step 12: 0x41ac08:	mov	eax, 0xca
+  Step 13: 0x41ac0d:	syscall	
+
+Slice 113:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x45754f:	pop	rdx
+  Step 3: 0x457556:	mov	rbx, qword ptr [rsp + 0x18]
+  Step 4: 0x457576:	add	rsp, 0x28
+  Step 5: 0x403cb8:	mov	edx, eax
+  Step 6: 0x403e22:	mov	rsi, qword ptr [rbp - 0x58]
+  Step 7: 0x403f98:	xchg	dword ptr [rip + 0xbe73a], edx
+  Step 8: 0x403ffc:	xor	r10d, r10d
+  Step 9: 0x403fff:	mov	edx, 1
+  Step 10: 0x404004:	mov	esi, 0x81
+  Step 11: 0x404009:	mov	eax, 0xca
+  Step 12: 0x40400e:	lea	rdi, [rip + 0xbe6c3]
+  Step 13: 0x404015:	syscall	
+
+Slice 114:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x4583fe:	mov	rdi, qword ptr [rbx]
+  Step 3: 0x458401:	call	0x4628e0
+  Step 4: 0x458406:	mov	qword ptr [rbx], 0
+  Step 5: 0x45840d:	add	rsp, 8
+  Step 6: 0x4182f3:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x418440:	xor	eax, eax
+  Step 8: 0x418451:	xor	r10d, r10d
+  Step 9: 0x418454:	mov	edx, 1
+  Step 10: 0x418459:	mov	esi, 0x81
+  Step 11: 0x41845e:	mov	eax, 0xca
+  Step 12: 0x418463:	lea	rdi, [rip + 0xab446]
+  Step 13: 0x41846a:	syscall	
+
+Slice 115:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x451ee2:	test	eax, eax
+  Step 3: 0x452160:	mov	r12, r14
+  Step 4: 0x452115:	add	rsp, 0x28
+  Step 5: 0x4666cb:	mov	rax, qword ptr [rbp - 0x48]
+  Step 6: 0x46654a:	mov	r8d, dword ptr fs:[0x18]
+  Step 7: 0x466710:	xor	eax, eax
+  Step 8: 0x466724:	xor	r10d, r10d
+  Step 9: 0x466727:	mov	edx, 1
+  Step 10: 0x46672c:	mov	esi, 0x81
+  Step 11: 0x466731:	mov	eax, 0xca
+  Step 12: 0x466736:	lea	rdi, [rip + 0x5c7e3]
+  Step 13: 0x46673d:	syscall	
+
+Slice 116:
+  Step 0: 0x451739:	syscall	
+  Step 1: 0x45173b:	cmp	rax, -0x1000
+  Step 2: 0x451743:	ret	
+  Step 3: 0x40513e:	mov	eax, dword ptr [rip + 0xbd640]
+  Step 4: 0x4050c8:	mov	dword ptr [rbx + 8], 1
+  Step 5: 0x4050cf:	mov	dword ptr [rip + 0xbd6af], eax
+  Step 6: 0x4050d9:	mov	qword ptr [rip + 0xbd6a4], 0
+  Step 7: 0x405150:	xchg	dword ptr [rip + 0xbd62a], eax
+  Step 8: 0x40515b:	xor	r10d, r10d
+  Step 9: 0x40515e:	mov	edx, 1
+  Step 10: 0x405163:	mov	esi, 0x81
+  Step 11: 0x405168:	mov	eax, 0xca
+  Step 12: 0x40516d:	lea	rdi, [rip + 0xbd60c]
+  Step 13: 0x405174:	syscall	
+
+Slice 117:
+  Step 0: 0x487e39:	syscall	
+  Step 1: 0x487e3b:	cmp	rax, -0x1000
+  Step 2: 0x487e43:	ret	
+  Step 3: 0x477eb5:	test	rax, rax
+  Step 4: 0x477ed0:	jne	0x477efd
+  Step 5: 0x477efd:	xor	r8d, r8d
+  Step 6: 0x477ee0:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x477f09:	xor	eax, eax
+  Step 8: 0x477f14:	xor	r10d, r10d
+  Step 9: 0x477f17:	mov	edx, 1
+  Step 10: 0x477f1c:	mov	esi, 0x81
+  Step 11: 0x477f21:	mov	rdi, r12
+  Step 12: 0x477f24:	mov	eax, 0xca
+  Step 13: 0x477f29:	syscall	
+
+Slice 118:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x4270dd:	mov	rcx, qword ptr [rsp + 8]
+  Step 5: 0x426fe8:	mov	rdx, r15
+  Step 6: 0x426ff6:	mov	r13, rax
+  Step 7: 0x427096:	xor	eax, eax
+  Step 8: 0x4270a3:	xor	r10d, r10d
+  Step 9: 0x4270a6:	mov	edx, 1
+  Step 10: 0x4270ab:	mov	esi, 0x81
+  Step 11: 0x4270b0:	mov	rdi, rbx
+  Step 12: 0x4270b3:	mov	eax, 0xca
+  Step 13: 0x4270b8:	syscall	
+
+Slice 119:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x42857d:	jmp	0x4284d8
+  Step 5: 0x4284d8:	mov	rsi, r12
+  Step 6: 0x4284e3:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x428540:	mov	eax, r14d
+  Step 8: 0x42854a:	xor	r10d, r10d
+  Step 9: 0x42854d:	mov	edx, 1
+  Step 10: 0x428552:	mov	esi, 0x81
+  Step 11: 0x428557:	mov	rdi, rbx
+  Step 12: 0x42855a:	mov	eax, 0xca
+  Step 13: 0x42855f:	syscall	
+
+Slice 120:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x421c41:	jmp	0x421b79
+  Step 5: 0x421b79:	mov	r12, qword ptr [rip + 0xa1128]
+  Step 6: 0x421bcf:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x421c50:	xor	eax, eax
+  Step 8: 0x421c5d:	xor	r10d, r10d
+  Step 9: 0x421c60:	mov	edx, 1
+  Step 10: 0x421c65:	mov	esi, 0x81
+  Step 11: 0x421c6a:	mov	eax, 0xca
+  Step 12: 0x421c6f:	lea	rdi, [rip + 0xa103a]
+  Step 13: 0x421c76:	syscall	
+
+Slice 121:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x403f77:	jmp	0x403daf
+  Step 5: 0x403daf:	cmp	qword ptr [r12 + 0x10], 0
+  Step 6: 0x403dbb:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x403f81:	xor	eax, eax
+  Step 8: 0x403fdf:	xor	r10d, r10d
+  Step 9: 0x403fe2:	mov	edx, 1
+  Step 10: 0x403fe7:	mov	esi, 0x81
+  Step 11: 0x403fec:	mov	eax, 0xca
+  Step 12: 0x403ff1:	lea	rdi, [rip + 0xbe6e0]
+  Step 13: 0x403ff8:	syscall	
+
+Slice 122:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x427445:	mov	rcx, qword ptr [rsp + 8]
+  Step 5: 0x427350:	mov	rdx, r15
+  Step 6: 0x42735e:	mov	r13, rax
+  Step 7: 0x4273fe:	xor	eax, eax
+  Step 8: 0x42740b:	xor	r10d, r10d
+  Step 9: 0x42740e:	mov	edx, 1
+  Step 10: 0x427413:	mov	esi, 0x81
+  Step 11: 0x427418:	mov	rdi, rbx
+  Step 12: 0x42741b:	mov	eax, 0xca
+  Step 13: 0x427420:	syscall	
+
+Slice 123:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x41e6d1:	jmp	0x41e539
+  Step 5: 0x41e539:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 6: 0x41e565:	mov	eax, dword ptr [rdi + 4]
+  Step 7: 0x41e576:	mov	qword ptr [rdi + 8], 0
+  Step 8: 0x41e6e0:	xchg	dword ptr [rdi], eax
+  Step 9: 0x41e6f1:	xor	r10d, r10d
+  Step 10: 0x41e6f4:	mov	edx, 1
+  Step 11: 0x41e6f9:	mov	esi, 0x81
+  Step 12: 0x41e6fe:	mov	eax, 0xca
+  Step 13: 0x41e703:	syscall	
+
+Slice 124:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x425da9:	jmp	0x425a73
+  Step 5: 0x425a73:	lea	rsi, [rsp + 0x10]
+  Step 6: 0x425a80:	mov	r14, rax
+  Step 7: 0x425d50:	xor	eax, eax
+  Step 8: 0x425d61:	xor	r10d, r10d
+  Step 9: 0x425d64:	mov	edx, 1
+  Step 10: 0x425d69:	mov	esi, 0x81
+  Step 11: 0x425d6e:	mov	eax, 0xca
+  Step 12: 0x425d73:	lea	rdi, [rip + 0x9aa26]
+  Step 13: 0x425d7a:	syscall	
+
+Slice 125:
+  Step 0: 0x465389:	syscall	
+  Step 1: 0x46538b:	cmp	rax, -0x1000
+  Step 2: 0x465397:	mov	rcx, qword ptr [rsp + 0x88]
+  Step 3: 0x4653ae:	add	rsp, 0x98
+  Step 4: 0x401268:	mov	eax, dword ptr [rip + 0xc1572]
+  Step 5: 0x401277:	mov	dword ptr [rip + 0xc155f], 0
+  Step 6: 0x401291:	mov	qword ptr [rip + 0xc153c], 0
+  Step 7: 0x4012b0:	xchg	dword ptr [rip + 0xc151a], eax
+  Step 8: 0x4012ba:	xor	r10d, r10d
+  Step 9: 0x4012bd:	mov	edx, 1
+  Step 10: 0x4012c2:	mov	esi, 0x81
+  Step 11: 0x4012c7:	mov	eax, 0xca
+  Step 12: 0x4012cc:	lea	rdi, [rip + 0xc14fd]
+  Step 13: 0x4012d3:	syscall	
+
+Slice 126:
+  Step 0: 0x4101c7:	syscall	
+  Step 1: 0x4101c9:	jmp	0x40ff80
+  Step 2: 0x40ff80:	mov	eax, dword ptr fs:[0x18]
+  Step 3: 0x41017a:	mov	eax, r12d
+  Step 4: 0x40ff9c:	mov	r14, qword ptr [rbx]
+  Step 5: 0x40ffa4:	jmp	0x41011f
+  Step 6: 0x41011f:	mov	byte ptr [rip + 0xb26ce], 1
+  Step 7: 0x4101d8:	xor	eax, eax
+  Step 8: 0x4101e9:	xor	r10d, r10d
+  Step 9: 0x4101ec:	mov	edx, 1
+  Step 10: 0x4101f1:	mov	esi, 0x81
+  Step 11: 0x4101f6:	mov	eax, 0xca
+  Step 12: 0x4101fb:	lea	rdi, [rip + 0xb354e]
+  Step 13: 0x410202:	syscall	
+
+Slice 127:
+  Step 0: 0x4101c7:	syscall	
+  Step 1: 0x4101c9:	jmp	0x40ff80
+  Step 2: 0x40ff80:	mov	eax, dword ptr fs:[0x18]
+  Step 3: 0x41017a:	mov	eax, r12d
+  Step 4: 0x40ff9c:	mov	r14, qword ptr [rbx]
+  Step 5: 0x40ffdf:	mov	rax, qword ptr [r14 + 8]
+  Step 6: 0x40ffec:	lea	r8, [rax - 1]
+  Step 7: 0x4100b8:	mov	eax, r12d
+  Step 8: 0x4100ca:	xor	r10d, r10d
+  Step 9: 0x4100cd:	mov	edx, 1
+  Step 10: 0x4100d2:	mov	esi, 0x81
+  Step 11: 0x4100d7:	mov	eax, 0xca
+  Step 12: 0x4100dc:	lea	rdi, [rip + 0xb366d]
+  Step 13: 0x4100e3:	syscall	
+
+Slice 128:
+  Step 0: 0x42219a:	syscall	
+  Step 1: 0x42219c:	jmp	0x42205c
+  Step 2: 0x42205c:	nop	
+  Step 3: 0x422071:	add	rsp, 8
+  Step 4: 0x428832:	lea	eax, [rbp + 8]
+  Step 5: 0x428898:	mov	r8d, 1
+  Step 6: 0x428870:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x4289b0:	xor	eax, eax
+  Step 8: 0x4289c1:	xor	r10d, r10d
+  Step 9: 0x4289c4:	mov	edx, 1
+  Step 10: 0x4289c9:	mov	esi, 0x81
+  Step 11: 0x4289ce:	mov	eax, 0xca
+  Step 12: 0x4289d3:	lea	rdi, [rip + 0x97dc6]
+  Step 13: 0x4289da:	syscall	
+
+Slice 129:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x424fc5:	add	rsp, 8
+  Step 5: 0x428b9c:	mov	r8, rax
+  Step 6: 0x428ba8:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x428cbd:	xor	eax, eax
+  Step 8: 0x428ccc:	xor	r10d, r10d
+  Step 9: 0x428ccf:	mov	edx, 1
+  Step 10: 0x428cd4:	mov	esi, 0x81
+  Step 11: 0x428cd9:	mov	rdi, r13
+  Step 12: 0x428cdc:	mov	eax, 0xca
+  Step 13: 0x428ce1:	syscall	
+
+Slice 130:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x424fc5:	add	rsp, 8
+  Step 5: 0x42788c:	mov	r8, rax
+  Step 6: 0x427898:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x4279ae:	xor	eax, eax
+  Step 8: 0x4279bd:	xor	r10d, r10d
+  Step 9: 0x4279c0:	mov	edx, 1
+  Step 10: 0x4279c5:	mov	esi, 0x81
+  Step 11: 0x4279ca:	mov	rdi, r13
+  Step 12: 0x4279cd:	mov	eax, 0xca
+  Step 13: 0x4279d2:	syscall	
+
+Slice 131:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x424fc5:	add	rsp, 8
+  Step 5: 0x427b7c:	mov	r8, rax
+  Step 6: 0x427b88:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x427cc0:	xor	eax, eax
+  Step 8: 0x427ccf:	xor	r10d, r10d
+  Step 9: 0x427cd2:	mov	edx, 1
+  Step 10: 0x427cd7:	mov	esi, 0x81
+  Step 11: 0x427cdc:	mov	rdi, r12
+  Step 12: 0x427cdf:	mov	eax, 0xca
+  Step 13: 0x427ce4:	syscall	
+
+Slice 132:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x424fc5:	add	rsp, 8
+  Step 5: 0x4275ac:	mov	r8, rax
+  Step 6: 0x4275b8:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x4276ce:	xor	eax, eax
+  Step 8: 0x4276dd:	xor	r10d, r10d
+  Step 9: 0x4276e0:	mov	edx, 1
+  Step 10: 0x4276e5:	mov	esi, 0x81
+  Step 11: 0x4276ea:	mov	rdi, r13
+  Step 12: 0x4276ed:	mov	eax, 0xca
+  Step 13: 0x4276f2:	syscall	
+
+Slice 133:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x424fc5:	add	rsp, 8
+  Step 5: 0x42688b:	mov	r8, rax
+  Step 6: 0x426897:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x4269ae:	xor	eax, eax
+  Step 8: 0x4269bc:	xor	r10d, r10d
+  Step 9: 0x4269bf:	mov	edx, 1
+  Step 10: 0x4269c4:	mov	esi, 0x81
+  Step 11: 0x4269c9:	mov	rdi, rbp
+  Step 12: 0x4269cc:	mov	eax, 0xca
+  Step 13: 0x4269d1:	syscall	
+
+Slice 134:
+  Step 0: 0x4266ef:	syscall	
+  Step 1: 0x4266f1:	jmp	0x4265ea
+  Step 2: 0x4265ea:	test	r8, r8
+  Step 3: 0x426550:	xor	r8d, r8d
+  Step 4: 0x46c612:	mov	r12, rax
+  Step 5: 0x46c6d2:	or	r8d, 0xffffffff
+  Step 6: 0x46c66f:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x46c6e0:	xor	eax, eax
+  Step 8: 0x46c6f1:	xor	r10d, r10d
+  Step 9: 0x46c6f4:	mov	edx, 1
+  Step 10: 0x46c6f9:	mov	esi, 0x81
+  Step 11: 0x46c6fe:	mov	eax, 0xca
+  Step 12: 0x46c703:	lea	rdi, [rip + 0x56822]
+  Step 13: 0x46c70a:	syscall	
+
+Slice 135:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x40281e:	xor	edi, edi
+  Step 3: 0x402827:	lea	rdi, [rsp + 0x70]
+  Step 4: 0x40f4f0:	endbr64	
+  Step 5: 0x465050:	endbr64	
+  Step 6: 0x4650c0:	endbr64	
+  Step 7: 0x4650d8:	xor	esi, esi
+  Step 8: 0x465340:	endbr64	
+  Step 9: 0x465366:	movabs	rcx, 0x180000000
+  Step 10: 0x465378:	mov	r8, rsi
+  Step 11: 0x46537b:	mov	r10d, 8
+  Step 12: 0x465381:	mov	rsi, r8
+  Step 13: 0x465384:	mov	eax, 0xe
+  Step 14: 0x465389:	syscall	
+
+Slice 136:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x427eda:	mov	rdx, r12
+  Step 3: 0x427ec0:	xor	r8d, r8d
+  Step 4: 0x427dd4:	add	rsp, 8
+  Step 5: 0x46a4f7:	mov	qword ptr [rip + 0x5946a], rax
+  Step 6: 0x46a599:	or	r8d, 0xffffffff
+  Step 7: 0x46a4c7:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x46a520:	xor	eax, eax
+  Step 9: 0x46a52d:	xor	r10d, r10d
+  Step 10: 0x46a530:	mov	edx, 1
+  Step 11: 0x46a535:	mov	esi, 0x81
+  Step 12: 0x46a53a:	mov	eax, 0xca
+  Step 13: 0x46a53f:	lea	rdi, [rip + 0x589de]
+  Step 14: 0x46a546:	syscall	
+
+Slice 137:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x427eda:	mov	rdx, r12
+  Step 3: 0x427ec0:	xor	r8d, r8d
+  Step 4: 0x427dd4:	add	rsp, 8
+  Step 5: 0x46c94f:	mov	qword ptr [rip + 0x5701a], rax
+  Step 6: 0x46c95b:	or	r8d, 0xffffffff
+  Step 7: 0x46c926:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x46c968:	xor	eax, eax
+  Step 9: 0x46c975:	xor	r10d, r10d
+  Step 10: 0x46c978:	mov	edx, 1
+  Step 11: 0x46c97d:	mov	esi, 0x81
+  Step 12: 0x46c982:	mov	eax, 0xca
+  Step 13: 0x46c987:	lea	rdi, [rip + 0x565a2]
+  Step 14: 0x46c98e:	syscall	
+
+Slice 138:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x427eda:	mov	rdx, r12
+  Step 3: 0x427ec0:	xor	r8d, r8d
+  Step 4: 0x427dd4:	add	rsp, 8
+  Step 5: 0x46a637:	mov	qword ptr [rip + 0x5932a], rax
+  Step 6: 0x46a6d9:	or	r8d, 0xffffffff
+  Step 7: 0x46a607:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x46a660:	xor	eax, eax
+  Step 9: 0x46a66d:	xor	r10d, r10d
+  Step 10: 0x46a670:	mov	edx, 1
+  Step 11: 0x46a675:	mov	esi, 0x81
+  Step 12: 0x46a67a:	mov	eax, 0xca
+  Step 13: 0x46a67f:	lea	rdi, [rip + 0x5889e]
+  Step 14: 0x46a686:	syscall	
+
+Slice 139:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x4522bb:	test	eax, eax
+  Step 3: 0x4522bf:	add	rsp, 8
+  Step 4: 0x45862d:	mov	rcx, qword ptr [rsp + 8]
+  Step 5: 0x458641:	and	r13d, 1
+  Step 6: 0x45864b:	mov	r9, r14
+  Step 7: 0x45865f:	mov	r9d, eax
+  Step 8: 0x4587b8:	xor	eax, eax
+  Step 9: 0x4587c9:	xor	r10d, r10d
+  Step 10: 0x4587cc:	mov	edx, 1
+  Step 11: 0x4587d1:	mov	esi, 0x81
+  Step 12: 0x4587d6:	mov	eax, 0xca
+  Step 13: 0x4587db:	lea	rdi, [rip + 0x6b0ce]
+  Step 14: 0x4587e2:	syscall	
+
+Slice 140:
+  Step 0: 0x451a29:	syscall	
+  Step 1: 0x451a2b:	cmp	rax, -0x1000
+  Step 2: 0x451a33:	ret	
+  Step 3: 0x41c043:	test	rax, rax
+  Step 4: 0x41c022:	sub	rbx, rax
+  Step 5: 0x41c02d:	mov	edi, dword ptr [r13 + 0x70]
+  Step 6: 0x41c018:	call	0x450e60
+  Step 7: 0x450e60:	endbr64	
+  Step 8: 0x450e80:	sub	rsp, 0x28
+  Step 9: 0x450e97:	mov	rdx, qword ptr [rsp + 0x18]
+  Step 10: 0x450e9c:	mov	rsi, qword ptr [rsp + 0x10]
+  Step 11: 0x450ea1:	mov	r8d, eax
+  Step 12: 0x450ea4:	mov	edi, dword ptr [rsp + 8]
+  Step 13: 0x450ea8:	mov	eax, 1
+  Step 14: 0x450ead:	syscall	
+
+Slice 141:
+  Step 0: 0x451cd9:	syscall	
+  Step 1: 0x451cdb:	cmp	rax, -0xfff
+  Step 2: 0x451ce3:	ret	
+  Step 3: 0x4281c6:	mov	edx, 1
+  Step 4: 0x428170:	mov	rbp, qword ptr [rbp + 0x18]
+  Step 5: 0x428147:	add	r12d, 1
+  Step 6: 0x4281d0:	lea	rax, [rip + 0x985c9]
+  Step 7: 0x4281e0:	or	dword ptr [rsp + 0x14], edx
+  Step 8: 0x428310:	xor	eax, eax
+  Step 9: 0x42831e:	xor	r10d, r10d
+  Step 10: 0x428321:	mov	edx, 1
+  Step 11: 0x428326:	mov	esi, 0x81
+  Step 12: 0x42832b:	mov	rdi, r15
+  Step 13: 0x42832e:	mov	eax, 0xca
+  Step 14: 0x428333:	syscall	
+
+Slice 142:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x44fb41:	jmp	0x44fa94
+  Step 5: 0x44fa94:	mov	rdx, qword ptr [rbx]
+  Step 6: 0x44faad:	mov	rdx, qword ptr [rbx + 0x10]
+  Step 7: 0x44fac6:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x44fb50:	xor	eax, eax
+  Step 9: 0x44fb61:	xor	r10d, r10d
+  Step 10: 0x44fb64:	mov	edx, 1
+  Step 11: 0x44fb69:	mov	esi, 0x81
+  Step 12: 0x44fb6e:	mov	eax, 0xca
+  Step 13: 0x44fb73:	lea	rdi, [rip + 0x73d36]
+  Step 14: 0x44fb7a:	syscall	
+
+Slice 143:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x458719:	jmp	0x458572
+  Step 5: 0x458572:	mov	r8d, r13d
+  Step 6: 0x458586:	mov	r9d, eax
+  Step 7: 0x45858e:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x458698:	xor	eax, eax
+  Step 9: 0x4586a9:	xor	r10d, r10d
+  Step 10: 0x4586ac:	mov	edx, 1
+  Step 11: 0x4586b1:	mov	esi, 0x81
+  Step 12: 0x4586b6:	mov	eax, 0xca
+  Step 13: 0x4586bb:	lea	rdi, [rip + 0x6b1ee]
+  Step 14: 0x4586c2:	syscall	
+
+Slice 144:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x4260cb:	jmp	0x426026
+  Step 5: 0x426026:	mov	rsi, rbp
+  Step 6: 0x426031:	mov	r8, rax
+  Step 7: 0x42603d:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x42613b:	xor	eax, eax
+  Step 9: 0x42614a:	xor	r10d, r10d
+  Step 10: 0x42614d:	mov	edx, 1
+  Step 11: 0x426152:	mov	esi, 0x81
+  Step 12: 0x426157:	mov	rdi, r12
+  Step 13: 0x42615a:	mov	eax, 0xca
+  Step 14: 0x42615f:	syscall	
+
+Slice 145:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x42571e:	mov	rsi, qword ptr [rsp + 8]
+  Step 5: 0x4255e5:	mov	rax, qword ptr [rip + 0x9b214]
+  Step 6: 0x425642:	lea	rdi, [rip + 0x9b157]
+  Step 7: 0x42564e:	mov	r8, rax
+  Step 8: 0x425730:	xor	eax, eax
+  Step 9: 0x425741:	xor	r10d, r10d
+  Step 10: 0x425744:	mov	edx, 1
+  Step 11: 0x425749:	mov	esi, 0x81
+  Step 12: 0x42574e:	mov	eax, 0xca
+  Step 13: 0x425753:	lea	rdi, [rip + 0x9b046]
+  Step 14: 0x42575a:	syscall	
+
+Slice 146:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x466981:	jmp	0x4668dd
+  Step 5: 0x4668dd:	mov	rbp, qword ptr [rip + 0x5c3f4]
+  Step 6: 0x4668e9:	jmp	0x466916
+  Step 7: 0x466916:	mov	r8d, dword ptr fs:[0x18]
+  Step 8: 0x466990:	xor	eax, eax
+  Step 9: 0x4669a0:	xor	r10d, r10d
+  Step 10: 0x4669a3:	mov	edx, 1
+  Step 11: 0x4669a8:	mov	esi, 0x81
+  Step 12: 0x4669ad:	mov	eax, 0xca
+  Step 13: 0x4669b2:	lea	rdi, [rip + 0x5c567]
+  Step 14: 0x4669b9:	syscall	
+
+Slice 147:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x424e3a:	jmp	0x424d3e
+  Step 5: 0x424d3e:	mov	esi, 0x280
+  Step 6: 0x424d4b:	mov	r8, rax
+  Step 7: 0x424d57:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x424e40:	xor	eax, eax
+  Step 9: 0x424e4e:	xor	r10d, r10d
+  Step 10: 0x424e51:	mov	edx, 1
+  Step 11: 0x424e56:	mov	esi, 0x81
+  Step 12: 0x424e5b:	mov	rdi, rbp
+  Step 13: 0x424e5e:	mov	eax, 0xca
+  Step 14: 0x424e63:	syscall	
+
+Slice 148:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x42665b:	jmp	0x4265be
+  Step 5: 0x4265be:	mov	rsi, rbp
+  Step 6: 0x4265c9:	mov	r8, rax
+  Step 7: 0x4265d5:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x4266cb:	xor	eax, eax
+  Step 9: 0x4266da:	xor	r10d, r10d
+  Step 10: 0x4266dd:	mov	edx, 1
+  Step 11: 0x4266e2:	mov	esi, 0x81
+  Step 12: 0x4266e7:	mov	rdi, r12
+  Step 13: 0x4266ea:	mov	eax, 0xca
+  Step 14: 0x4266ef:	syscall	
+
+Slice 149:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x410545:	jmp	0x4104c6
+  Step 5: 0x4104c6:	lea	rdi, [rip + 0xafc33]
+  Step 6: 0x4104d2:	test	rax, rax
+  Step 7: 0x4104db:	movq	xmm0, qword ptr [rsp]
+  Step 8: 0x410550:	xor	eax, eax
+  Step 9: 0x410560:	xor	r10d, r10d
+  Step 10: 0x410563:	mov	edx, 1
+  Step 11: 0x410568:	mov	esi, 0x81
+  Step 12: 0x41056d:	mov	eax, 0xca
+  Step 13: 0x410572:	lea	rdi, [rip + 0xb31d7]
+  Step 14: 0x410579:	syscall	
+
+Slice 150:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x426d01:	jmp	0x426bf8
+  Step 5: 0x426bf8:	mov	rax, qword ptr [rbx + 0x880]
+  Step 6: 0x426c08:	sub	rax, 1
+  Step 7: 0x426c19:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x426d10:	xor	eax, eax
+  Step 9: 0x426d21:	xor	r10d, r10d
+  Step 10: 0x426d24:	mov	edx, 1
+  Step 11: 0x426d29:	mov	esi, 0x81
+  Step 12: 0x426d2e:	mov	eax, 0xca
+  Step 13: 0x426d33:	lea	rdi, [rip + 0x9bf76]
+  Step 14: 0x426d3a:	syscall	
+
+Slice 151:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x410405:	jmp	0x41038a
+  Step 5: 0x41038a:	mov	rdi, rbp
+  Step 6: 0x410392:	test	rax, rax
+  Step 7: 0x41039b:	movq	xmm0, qword ptr [rsp]
+  Step 8: 0x410410:	xor	eax, eax
+  Step 9: 0x410420:	xor	r10d, r10d
+  Step 10: 0x410423:	mov	edx, 1
+  Step 11: 0x410428:	mov	esi, 0x81
+  Step 12: 0x41042d:	mov	eax, 0xca
+  Step 13: 0x410432:	lea	rdi, [rip + 0xb3317]
+  Step 14: 0x410439:	syscall	
+
+Slice 152:
+  Step 0: 0x4809ff:	syscall	
+  Step 1: 0x480a01:	lea	rsp, [rbp - 0x28]
+  Step 2: 0x4810b1:	add	rsp, 0xd8
+  Step 3: 0x47d708:	mov	r14, qword ptr [rsp + 0x58]
+  Step 4: 0x47d513:	mov	rax, qword ptr [rsp + 0x50]
+  Step 5: 0x47d51c:	add	rsp, 0x88
+  Step 6: 0x488382:	mov	r8, rax
+  Step 7: 0x488480:	xor	eax, eax
+  Step 8: 0x488493:	mov	rdi, qword ptr fs:[0x10]
+  Step 9: 0x48849c:	xor	r10d, r10d
+  Step 10: 0x48849f:	add	rdi, 0x1c
+  Step 11: 0x4884a3:	mov	edx, 1
+  Step 12: 0x4884a8:	mov	esi, 0x81
+  Step 13: 0x4884ad:	mov	eax, 0xca
+  Step 14: 0x4884b2:	syscall	
+
+Slice 153:
+  Step 0: 0x4809ff:	syscall	
+  Step 1: 0x480a01:	lea	rsp, [rbp - 0x28]
+  Step 2: 0x4810b1:	add	rsp, 0xd8
+  Step 3: 0x47d708:	mov	r14, qword ptr [rsp + 0x58]
+  Step 4: 0x47d513:	mov	rax, qword ptr [rsp + 0x50]
+  Step 5: 0x47d51c:	add	rsp, 0x88
+  Step 6: 0x488197:	mov	r8, rax
+  Step 7: 0x488210:	xor	eax, eax
+  Step 8: 0x48821f:	mov	rdi, qword ptr fs:[0x10]
+  Step 9: 0x488228:	xor	r10d, r10d
+  Step 10: 0x48822b:	add	rdi, 0x1c
+  Step 11: 0x48822f:	mov	edx, 1
+  Step 12: 0x488234:	mov	esi, 0x81
+  Step 13: 0x488239:	mov	eax, 0xca
+  Step 14: 0x48823e:	syscall	
+
+Slice 154:
+  Step 0: 0x41ac0d:	syscall	
+  Step 1: 0x41ac0f:	jmp	0x41ab6b
+  Step 2: 0x41ab6b:	add	rsp, 8
+  Step 3: 0x401f03:	mov	byte ptr [rbp - 0xa5], al
+  Step 4: 0x450c90:	endbr64	
+  Step 5: 0x450cbf:	mov	eax, esi
+  Step 6: 0x450ccd:	mov	eax, dword ptr fs:[0x18]
+  Step 7: 0x450d40:	mov	dword ptr [rsp + 0xc], r10d
+  Step 8: 0x450d4a:	mov	r10d, dword ptr [rsp + 0xc]
+  Step 9: 0x450d4f:	mov	edx, r12d
+  Step 10: 0x450d52:	mov	rsi, rbp
+  Step 11: 0x450d55:	mov	r8d, eax
+  Step 12: 0x450d58:	mov	edi, 0xffffff9c
+  Step 13: 0x450d5d:	mov	eax, 0x101
+  Step 14: 0x450d62:	syscall	
+
+Slice 155:
+  Step 0: 0x42219a:	syscall	
+  Step 1: 0x42219c:	jmp	0x42205c
+  Step 2: 0x42205c:	nop	
+  Step 3: 0x422071:	add	rsp, 8
+  Step 4: 0x427f1a:	mov	rsi, r12
+  Step 5: 0x427f28:	mov	r8, rax
+  Step 6: 0x427f2b:	test	rbp, rbp
+  Step 7: 0x427f34:	mov	eax, dword ptr fs:[0x18]
+  Step 8: 0x42804c:	xor	eax, eax
+  Step 9: 0x42805a:	xor	r10d, r10d
+  Step 10: 0x42805d:	mov	edx, 1
+  Step 11: 0x428062:	mov	esi, 0x81
+  Step 12: 0x428067:	mov	rdi, rbp
+  Step 13: 0x42806a:	mov	eax, 0xca
+  Step 14: 0x42806f:	syscall	
+
+Slice 156:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x424fc5:	add	rsp, 8
+  Step 5: 0x428b9c:	mov	r8, rax
+  Step 6: 0x428c6f:	nop	
+  Step 7: 0x4224b0:	push	rbp
+  Step 8: 0x422500:	mov	rbp, rsi
+  Step 9: 0x422580:	xor	eax, eax
+  Step 10: 0x422589:	xor	r10d, r10d
+  Step 11: 0x42258c:	mov	edx, 1
+  Step 12: 0x422591:	mov	esi, 0x81
+  Step 13: 0x422596:	mov	eax, 0xca
+  Step 14: 0x42259b:	syscall	
+
+Slice 157:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x424fc5:	add	rsp, 8
+  Step 5: 0x428b9c:	mov	r8, rax
+  Step 6: 0x428c6f:	nop	
+  Step 7: 0x4224b0:	push	rbp
+  Step 8: 0x4224c2:	mov	eax, dword ptr fs:[0x18]
+  Step 9: 0x422530:	xor	eax, eax
+  Step 10: 0x422539:	xor	r10d, r10d
+  Step 11: 0x42253c:	mov	edx, 1
+  Step 12: 0x422541:	mov	esi, 0x81
+  Step 13: 0x422546:	mov	eax, 0xca
+  Step 14: 0x42254b:	syscall	
+
+Slice 158:
+  Step 0: 0x415dfd:	syscall	
+  Step 1: 0x415dff:	jmp	0x414229
+  Step 2: 0x414229:	mov	ecx, dword ptr [rbp - 0x4b4]
+  Step 3: 0x414237:	mov	rax, qword ptr [rbp - 0x38]
+  Step 4: 0x41424a:	lea	rsp, [rbp - 0x28]
+  Step 5: 0x46ca7a:	mov	rcx, qword ptr [rsp + 0x18]
+  Step 6: 0x46ca8a:	add	rsp, 0xd8
+  Step 7: 0x42868d:	mov	r14d, dword ptr [rsp + 0x2c]
+  Step 8: 0x428788:	xor	eax, eax
+  Step 9: 0x428795:	xor	r10d, r10d
+  Step 10: 0x428798:	mov	edx, 1
+  Step 11: 0x42879d:	mov	esi, 0x81
+  Step 12: 0x4287a2:	mov	rdi, rbx
+  Step 13: 0x4287a5:	mov	eax, 0xca
+  Step 14: 0x4287aa:	syscall	
+
+Slice 159:
   Step 0: 0x482661:	syscall	
-  Step 1: 0x48265e:	mov	rsi, rbp
-  Step 2: 0x482661:	syscall	
+  Step 1: 0x482630:	endbr64	
+  Step 2: 0x482634:	push	r13
+  Step 3: 0x482636:	push	r12
+  Step 4: 0x482638:	push	rbp
+  Step 5: 0x482639:	push	rbx
+  Step 6: 0x48263a:	sub	rsp, 0x1000
+  Step 7: 0x482641:	or	qword ptr [rsp], 0
+  Step 8: 0x482646:	sub	rsp, 8
+  Step 9: 0x48264a:	mov	edx, 0x1000
+  Step 10: 0x48264f:	lea	rdi, [rip + 0x290ad]
+  Step 11: 0x482656:	mov	eax, 0x59
+  Step 12: 0x48265b:	mov	rbp, rsp
+  Step 13: 0x48265e:	mov	rsi, rbp
+  Step 14: 0x482661:	syscall	
+
+Slice 160:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x41b8cb:	mov	rcx, qword ptr [rsp + 0x98]
+  Step 3: 0x41b8e2:	add	rsp, 0xa8
+  Step 4: 0x473ef8:	cmp	eax, -1
+  Step 5: 0x473e27:	mov	eax, dword ptr [rbx]
+  Step 6: 0x473e30:	test	ah, 0x80
+  Step 7: 0x473e35:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 8: 0x473e3c:	mov	eax, dword ptr [rdi + 4]
+  Step 9: 0x473e47:	mov	qword ptr [rdi + 8], 0
+  Step 10: 0x473f47:	xchg	dword ptr [rdi], eax
+  Step 11: 0x473f52:	xor	r10d, r10d
+  Step 12: 0x473f55:	mov	edx, 1
+  Step 13: 0x473f5a:	mov	esi, 0x81
+  Step 14: 0x473f5f:	mov	eax, 0xca
+  Step 15: 0x473f64:	syscall	
+
+Slice 161:
+  Step 0: 0x478269:	syscall	
+  Step 1: 0x47826b:	cmp	rax, -0x1000
+  Step 2: 0x478288:	mov	rdx, 0xffffffffffffffc0
+  Step 3: 0x451b21:	test	eax, eax
+  Step 4: 0x451b25:	add	rsp, 8
+  Step 5: 0x402ffc:	mov	rdi, rbx
+  Step 6: 0x402ec2:	mov	rdx, qword ptr [rsp + 8]
+  Step 7: 0x402ef0:	mov	rcx, qword ptr [rsp + 0x18]
+  Step 8: 0x402ef5:	mov	edi, 0x1002
+  Step 9: 0x402efa:	lea	rax, [rip + 0xc042f]
+  Step 10: 0x402f01:	lea	rsi, [rcx + rbx]
+  Step 11: 0x402f05:	mov	qword ptr [rsi + 8], rax
+  Step 12: 0x402f09:	mov	eax, 0x9e
+  Step 13: 0x402f0e:	mov	qword ptr [rsi], rsi
+  Step 14: 0x402f11:	mov	qword ptr [rsi + 0x10], rsi
+  Step 15: 0x402f15:	syscall	
+
+Slice 162:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x425111:	jmp	0x42507d
+  Step 5: 0x42507d:	xor	esi, esi
+  Step 6: 0x425087:	mov	r8, rax
+  Step 7: 0x425093:	test	byte ptr [rax + 8], 2
+  Step 8: 0x425099:	mov	eax, dword ptr fs:[0x18]
+  Step 9: 0x425120:	xor	eax, eax
+  Step 10: 0x425131:	xor	r10d, r10d
+  Step 11: 0x425134:	mov	edx, 1
+  Step 12: 0x425139:	mov	esi, 0x81
+  Step 13: 0x42513e:	mov	eax, 0xca
+  Step 14: 0x425143:	lea	rdi, [rip + 0x9b656]
+  Step 15: 0x42514a:	syscall	
+
+Slice 163:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x422161:	jmp	0x421fd8
+  Step 5: 0x421fd8:	test	r13, r13
+  Step 6: 0x421ff8:	mov	rax, qword ptr [rip + 0xa0ca9]
+  Step 7: 0x42200b:	jmp	0x42203c
+  Step 8: 0x42203c:	add	qword ptr [r12 + 0x880], 1
+  Step 9: 0x422170:	xor	eax, eax
+  Step 10: 0x422181:	xor	r10d, r10d
+  Step 11: 0x422184:	mov	edx, 1
+  Step 12: 0x422189:	mov	esi, 0x81
+  Step 13: 0x42218e:	mov	eax, 0xca
+  Step 14: 0x422193:	lea	rdi, [rip + 0xa0b16]
+  Step 15: 0x42219a:	syscall	
+
+Slice 164:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x41e431:	jmp	0x41e1fb
+  Step 5: 0x41e1fb:	mov	esi, dword ptr [rbx]
+  Step 6: 0x41e236:	and	sil, 0x7f
+  Step 7: 0x41e245:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 8: 0x41e24c:	mov	eax, dword ptr [rdi + 4]
+  Step 9: 0x41e25d:	mov	qword ptr [rdi + 8], 0
+  Step 10: 0x41e31e:	xchg	dword ptr [rdi], eax
+  Step 11: 0x41e32f:	xor	r10d, r10d
+  Step 12: 0x41e332:	mov	edx, 1
+  Step 13: 0x41e337:	mov	esi, 0x81
+  Step 14: 0x41e33c:	mov	eax, 0xca
+  Step 15: 0x41e341:	syscall	
+
+Slice 165:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x417dd5:	mov	eax, dword ptr [rbp - 0x4c]
+  Step 5: 0x417d19:	mov	rbx, qword ptr [rbp - 0x38]
+  Step 6: 0x417d2c:	lea	rsp, [rbp - 0x28]
+  Step 7: 0x418195:	mov	dword ptr [rbx + 0x74], ebp
+  Step 8: 0x4181a3:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 9: 0x4181b5:	mov	qword ptr [rdi + 8], 0
+  Step 10: 0x418218:	xchg	dword ptr [rdi], eax
+  Step 11: 0x41821f:	xor	r10d, r10d
+  Step 12: 0x418222:	mov	edx, 1
+  Step 13: 0x418227:	mov	esi, 0x81
+  Step 14: 0x41822c:	mov	eax, 0xca
+  Step 15: 0x418231:	syscall	
+
+Slice 166:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x417dd5:	mov	eax, dword ptr [rbp - 0x4c]
+  Step 5: 0x417d19:	mov	rbx, qword ptr [rbp - 0x38]
+  Step 6: 0x417d2c:	lea	rsp, [rbp - 0x28]
+  Step 7: 0x417e55:	mov	r8d, eax
+  Step 8: 0x417e60:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 9: 0x417e72:	mov	qword ptr [rdi + 8], 0
+  Step 10: 0x417ed0:	xchg	dword ptr [rdi], eax
+  Step 11: 0x417ed7:	xor	r10d, r10d
+  Step 12: 0x417eda:	mov	edx, 1
+  Step 13: 0x417edf:	mov	esi, 0x81
+  Step 14: 0x417ee4:	mov	eax, 0xca
+  Step 15: 0x417ee9:	syscall	
+
+Slice 167:
+  Step 0: 0x422ff4:	syscall	
+  Step 1: 0x422ff6:	jmp	0x422d73
+  Step 2: 0x422d73:	mov	rax, qword ptr [rsp + 0x38]
+  Step 3: 0x422d87:	add	rsp, 0x48
+  Step 4: 0x417dd5:	mov	eax, dword ptr [rbp - 0x4c]
+  Step 5: 0x417d19:	mov	rbx, qword ptr [rbp - 0x38]
+  Step 6: 0x417d2c:	lea	rsp, [rbp - 0x28]
+  Step 7: 0x417fea:	mov	r8d, eax
+  Step 8: 0x417ff5:	mov	rdi, qword ptr [rbx + 0x88]
+  Step 9: 0x418007:	mov	qword ptr [rdi + 8], 0
+  Step 10: 0x418068:	xchg	dword ptr [rdi], eax
+  Step 11: 0x41806f:	xor	r10d, r10d
+  Step 12: 0x418072:	mov	edx, 1
+  Step 13: 0x418077:	mov	esi, 0x81
+  Step 14: 0x41807c:	mov	eax, 0xca
+  Step 15: 0x418081:	syscall	
+
+Slice 168:
+  Step 0: 0x487e69:	syscall	
+  Step 1: 0x487e6b:	ret	
+  Step 2: 0x480d70:	test	eax, eax
+  Step 3: 0x480d78:	xor	ecx, ecx
+  Step 4: 0x467040:	endbr64	
+  Step 5: 0x4670d0:	movabs	rcx, 0xcccccccccccccccd
+  Step 6: 0x4670e0:	mov	rax, rdi
+  Step 7: 0x46710f:	mov	rax, r8
+  Step 8: 0x480bc0:	mov	rsi, qword ptr [rbp - 0x448]
+  Step 9: 0x480be8:	movsxd	rcx, ebx
+  Step 10: 0x480b11:	lea	r12, [r11 + 1]
+  Step 11: 0x4809dd:	movzx	eax, byte ptr [r12]
+  Step 12: 0x4809ea:	movsxd	rdx, ebx
+  Step 13: 0x4809ed:	mov	edi, dword ptr [rbp - 0x460]
+  Step 14: 0x4809f3:	lea	rsi, [rbp - 0x430]
+  Step 15: 0x4809fa:	mov	eax, 0x14
+  Step 16: 0x4809ff:	syscall	
+
+Slice 169:
+  Step 0: 0x41e418:	syscall	
+  Step 1: 0x41e41a:	jmp	0x41e2b6
+  Step 2: 0x41e2b6:	test	rbp, rbp
+  Step 3: 0x41e2c5:	mov	rax, qword ptr [rsp + 0x28]
+  Step 4: 0x41e2d9:	add	rsp, 0x30
+  Step 5: 0x41834d:	mov	eax, dword ptr [rbp]
+  Step 6: 0x418395:	mov	edx, eax
+  Step 7: 0x418264:	shl	eax, 0x1a
+  Step 8: 0x41826d:	test	edx, edx
+  Step 9: 0x418271:	mov	rdi, qword ptr [rbp + 0x88]
+  Step 10: 0x4183c0:	mov	qword ptr [rdi + 8], 0
+  Step 11: 0x418498:	xchg	dword ptr [rdi], edx
+  Step 12: 0x4184a3:	xor	r10d, r10d
+  Step 13: 0x4184a6:	mov	edx, 1
+  Step 14: 0x4184ab:	mov	esi, 0x81
+  Step 15: 0x4184b0:	mov	eax, 0xca
+  Step 16: 0x4184b5:	syscall	
+
+Slice 170:
+  Step 0: 0x451c79:	syscall	
+  Step 1: 0x451c7b:	cmp	rax, -0xfff
+  Step 2: 0x451c83:	ret	
+  Step 3: 0x4844c0:	mov	r8, qword ptr [rip + 0x3ead9]
+  Step 4: 0x483c55:	cmp	r8, -1
+  Step 5: 0x483c5f:	mov	r12, qword ptr [rip + 0x3f32a]
+  Step 6: 0x483c66:	mov	rax, qword ptr [rip + 0x3f32b]
+  Step 7: 0x483c7f:	mov	r12, qword ptr [rip + 0x3fb62]
+  Step 8: 0x48447b:	mov	qword ptr [rbp - 0x60], 0xffffffffffffffff
+  Step 9: 0x483cdd:	lea	rsi, [rbp - 0x38]
+  Step 10: 0x454ed0:	endbr64	
+  Step 11: 0x454f38:	mov	qword ptr [rsi], rax
+  Step 12: 0x454f01:	lea	rax, [rdi*8]
+  Step 13: 0x454f30:	ret	
+  Step 14: 0x40260e:	lea	rsi, [rsp + 0x70]
+  Step 15: 0x402613:	mov	edi, 0x3001
+  Step 16: 0x402618:	mov	eax, 0x9e
+  Step 17: 0x40261d:	syscall	
+
+Slice 171:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x406ae8:	jmp	0x406961
+  Step 5: 0x406961:	cmp	qword ptr [rip + 0xbbe27], 0
+  Step 6: 0x40696f:	mov	r15, qword ptr [rip + 0xbbe2a]
+  Step 7: 0x406986:	mov	rsi, qword ptr [rip + 0xbbe03]
+  Step 8: 0x4069f0:	test	dl, dl
+  Step 9: 0x4069fb:	xor	r8d, r8d
+  Step 10: 0x4069fe:	mov	eax, dword ptr fs:[0x18]
+  Step 11: 0x406aed:	xor	eax, eax
+  Step 12: 0x406afe:	xor	r10d, r10d
+  Step 13: 0x406b01:	mov	edx, 1
+  Step 14: 0x406b06:	mov	esi, 0x81
+  Step 15: 0x406b0b:	mov	eax, 0xca
+  Step 16: 0x406b10:	lea	rdi, [rip + 0xbbca1]
+  Step 17: 0x406b17:	syscall	
+
+Slice 172:
+  Step 0: 0x451739:	syscall	
+  Step 1: 0x45173b:	cmp	rax, -0x1000
+  Step 2: 0x451743:	ret	
+  Step 3: 0x464588:	mov	rsi, qword ptr [rbx]
+  Step 4: 0x401180:	endbr64	
+  Step 5: 0x4464f0:	endbr64	
+  Step 6: 0x44651a:	movdqu	xmm4, xmmword ptr [rax]
+  Step 7: 0x44652a:	bsf	eax, edx
+  Step 8: 0x41b06c:	mov	rcx, qword ptr [rbp - 0x88]
+  Step 9: 0x41afe2:	mov	rax, rsp
+  Step 10: 0x41afff:	sub	rsp, 0x20
+  Step 11: 0x41b07b:	movsxd	rdx, edx
+  Step 12: 0x41b0b6:	and	eax, 0xfff
+  Step 13: 0x41b0c7:	movsxd	r13, r14d
+  Step 14: 0x41b11b:	mov	r9d, 0x14
+  Step 15: 0x41b121:	nop	dword ptr [rax]
+  Step 16: 0x41b128:	mov	rsi, rbx
+  Step 17: 0x41b12b:	mov	edi, 2
+  Step 18: 0x41b130:	mov	eax, r9d
+  Step 19: 0x41b133:	syscall	
+
+Slice 173:
+  Step 0: 0x402f15:	syscall	
+  Step 1: 0x402f17:	test	eax, eax
+  Step 2: 0x402f1b:	lea	rdi, [rip + 0x92376]
+  Step 3: 0x41b220:	endbr64	
+  Step 4: 0x41add0:	push	rbp
+  Step 5: 0x41ae1e:	mov	r8, rax
+  Step 6: 0x41ae45:	sub	rsp, 0x20
+  Step 7: 0x41ae84:	sub	rsp, 0x20
+  Step 8: 0x41ae88:	or	qword ptr [rsp + 0x18], 0
+  Step 9: 0x41ae8e:	mov	r9d, 0x14
+  Step 10: 0x41ae94:	lea	rbx, [rsp + 0xf]
+  Step 11: 0x41ae99:	and	rbx, 0xfffffffffffffff0
+  Step 12: 0x41ae9d:	mov	qword ptr [rbx], r12
+  Step 13: 0x41aea0:	mov	qword ptr [rbx + 8], r8
+  Step 14: 0x41aea4:	nop	dword ptr [rax]
+  Step 15: 0x41aea8:	mov	edx, 1
+  Step 16: 0x41aead:	mov	rsi, rbx
+  Step 17: 0x41aeb0:	mov	edi, 2
+  Step 18: 0x41aeb5:	mov	eax, r9d
+  Step 19: 0x41aeb8:	syscall	
+
+Slice 174:
+  Step 0: 0x421279:	syscall	
+  Step 1: 0x42127b:	jmp	0x42125b
+  Step 2: 0x42125b:	mov	eax, 2
+  Step 3: 0x421280:	ret	
+  Step 4: 0x422b6d:	movdqa	xmm2, xmmword ptr [rip + 0x734db]
+  Step 5: 0x4226f8:	mov	rax, qword ptr [rsp]
+  Step 6: 0x422743:	mov	rax, qword ptr [rsi]
+  Step 7: 0x422720:	mov	qword ptr [rcx + 0x18], 0
+  Step 8: 0x42272d:	imul	rdx, qword ptr [rcx + 8]
+  Step 9: 0x422783:	mov	rax, qword ptr [rsp]
+  Step 10: 0x4227d4:	mov	rdx, qword ptr [r9 + 0x10]
+  Step 11: 0x4227b0:	mov	qword ptr [r8 - 0x10], 0
+  Step 12: 0x4227ba:	add	r10, qword ptr [r8]
+  Step 13: 0x422860:	lea	rdi, [rip + 0x9df39]
+  Step 14: 0x422871:	mov	qword ptr [rsp + 0x78], 0
+  Step 15: 0x42288c:	mov	eax, dword ptr fs:[0x18]
+  Step 16: 0x422b29:	mov	rdi, qword ptr [rsp]
+  Step 17: 0x422b3a:	xor	r10d, r10d
+  Step 18: 0x422b3d:	mov	edx, 1
+  Step 19: 0x422b42:	mov	esi, 0x81
+  Step 20: 0x422b47:	mov	eax, 0xca
+  Step 21: 0x422b4c:	syscall	
+
+Slice 175:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x500058:	add	byte ptr [rax], al
+  Step 2: 0x48d01c:	mov	rax, qword ptr [rbx + 0x108]
+  Step 3: 0x48d063:	pop	rbx
+  Step 4: 0x488d62:	mov	edx, dword ptr [r14 + 0x2c8]
+  Step 5: 0x488d96:	mov	rsi, qword ptr [rbx + 0x20]
+  Step 6: 0x488da1:	mov	dword ptr [rax + 0x18], 0
+  Step 7: 0x488db4:	nop	
+  Step 8: 0x48af30:	endbr64	
+  Step 9: 0x48af63:	mov	eax, dword ptr [rip + 0x38887]
+  Step 10: 0x48af6d:	mov	esi, eax
+  Step 11: 0x48afe0:	mov	r8d, dword ptr [r14 + 0x2c8]
+  Step 12: 0x48aff4:	cmp	ecx, 2
+  Step 13: 0x48b00e:	test	dil, dil
+  Step 14: 0x48b017:	mov	ecx, eax
+  Step 15: 0x48b020:	mov	rbp, qword ptr [rcx]
+  Step 16: 0x48b054:	sub	eax, 1
+  Step 17: 0x48b060:	test	dl, dl
+  Step 18: 0x48b068:	mov	rdi, qword ptr [rip + 0x38811]
+  Step 19: 0x48b078:	lea	rsi, [rip + 0x38801]
+  Step 20: 0x48b07f:	mov	edi, 0x3005
+  Step 21: 0x48b084:	mov	eax, 0x9e
+  Step 22: 0x48b089:	syscall	
+
+Slice 176:
+  Step 0: 0x40f588:	syscall	
+  Step 1: 0x40f500:	endbr64	
+  Step 2: 0x40f504:	sub	rsp, 0x118
+  Step 3: 0x40f50b:	mov	r8d, edi
+  Step 4: 0x40f50e:	xor	edi, edi
+  Step 5: 0x40f510:	movdqa	xmm0, xmmword ptr [rip + 0x86348]
+  Step 6: 0x40f518:	mov	rax, qword ptr fs:[0x28]
+  Step 7: 0x40f521:	mov	qword ptr [rsp + 0x108], rax
+  Step 8: 0x40f529:	xor	eax, eax
+  Step 9: 0x40f52b:	mov	r9, rsp
+  Step 10: 0x40f52e:	mov	eax, 0xe
+  Step 11: 0x40f533:	lea	rsi, [rsp + 0x80]
+  Step 12: 0x40f53b:	movaps	xmmword ptr [rsp + 0x80], xmm0
+  Step 13: 0x40f543:	pcmpeqd	xmm0, xmm0
+  Step 14: 0x40f547:	mov	r10d, 8
+  Step 15: 0x40f54d:	mov	rdx, r9
+  Step 16: 0x40f550:	movaps	xmmword ptr [rsp + 0x90], xmm0
+  Step 17: 0x40f558:	movaps	xmmword ptr [rsp + 0xa0], xmm0
+  Step 18: 0x40f560:	movaps	xmmword ptr [rsp + 0xb0], xmm0
+  Step 19: 0x40f568:	movaps	xmmword ptr [rsp + 0xc0], xmm0
+  Step 20: 0x40f570:	movaps	xmmword ptr [rsp + 0xd0], xmm0
+  Step 21: 0x40f578:	movaps	xmmword ptr [rsp + 0xe0], xmm0
+  Step 22: 0x40f580:	movaps	xmmword ptr [rsp + 0xf0], xmm0
+  Step 23: 0x40f588:	syscall	
+
+Slice 177:
+  Step 0: 0x4809ff:	syscall	
+  Step 1: 0x480a01:	lea	rsp, [rbp - 0x28]
+  Step 2: 0x481001:	add	rsp, 0xd8
+  Step 3: 0x47c8df:	mov	r11, qword ptr [rsp]
+  Step 4: 0x47c800:	mov	esi, dword ptr [rbx + 0x2f4]
+  Step 5: 0x47c87c:	add	rbp, 1
+  Step 6: 0x47cb60:	xor	eax, eax
+  Step 7: 0x47cb62:	add	rsp, 0x88
+  Step 8: 0x47d5b4:	add	rsp, 0x30
+  Step 9: 0x47d7ca:	cmp	qword ptr [rsp + 0x60], 0
+  Step 10: 0x47d823:	mov	r14, qword ptr [rsp + 0x58]
+  Step 11: 0x47d7ef:	mov	ebp, 1
+  Step 12: 0x47d4e0:	movzx	eax, byte ptr [r14 + 0x31c]
+  Step 13: 0x47d722:	test	byte ptr [rsp + 0xc0], 1
+  Step 14: 0x47d730:	cmp	qword ptr [rsp + 8], r14
+  Step 15: 0x47d73b:	cmp	byte ptr [r14 + 0x31f], 0
+  Step 16: 0x47d749:	mov	eax, dword ptr [rsp + 0xc0]
+  Step 17: 0x47d767:	mov	rax, qword ptr [rsp + 8]
+  Step 18: 0x47d855:	test	r8, r8
+  Step 19: 0x47d85a:	mov	r9d, dword ptr [r8]
+  Step 20: 0x47d887:	mov	rax, qword ptr [r14 + 0x478]
+  Step 21: 0x47db0d:	xor	eax, eax
+  Step 22: 0x47db1c:	mov	rdi, qword ptr fs:[0x10]
+  Step 23: 0x47db25:	xor	r10d, r10d
+  Step 24: 0x47db28:	add	rdi, 0x1c
+  Step 25: 0x47db2c:	mov	edx, 1
+  Step 26: 0x47db31:	mov	esi, 0x81
+  Step 27: 0x47db36:	mov	eax, 0xca
+  Step 28: 0x47db3b:	syscall	
+
+Slice 178:
+  Step 0: 0x465117:	syscall	
+  Step 1: 0x465119:	nop	dword ptr [rax]
+  Step 2: 0x465120:	endbr64	
+  Step 3: 0x46514a:	mov	rax, qword ptr [rsi]
+  Step 4: 0x46514d:	movdqu	xmm0, xmmword ptr [rsi + 8]
+  Step 5: 0x465152:	lea	rdx, [rsp + 0xa0]
+  Step 6: 0x46515a:	movdqu	xmm1, xmmword ptr [rsi + 0x18]
+  Step 7: 0x46515f:	movdqu	xmm2, xmmword ptr [rsi + 0x28]
+  Step 8: 0x465164:	movdqu	xmm3, xmmword ptr [rsi + 0x38]
+  Step 9: 0x465169:	movdqu	xmm4, xmmword ptr [rsi + 0x48]
+  Step 10: 0x46516e:	mov	qword ptr [rsp], rax
+  Step 11: 0x465172:	mov	eax, dword ptr [rsi + 0x88]
+  Step 12: 0x465178:	movdqu	xmm5, xmmword ptr [rsi + 0x58]
+  Step 13: 0x46517d:	movups	xmmword ptr [rsp + 0x18], xmm0
+  Step 14: 0x465182:	movdqu	xmm6, xmmword ptr [rsi + 0x68]
+  Step 15: 0x465187:	movdqu	xmm7, xmmword ptr [rsi + 0x78]
+  Step 16: 0x46518c:	movups	xmmword ptr [rsp + 0x28], xmm1
+  Step 17: 0x465191:	mov	rsi, rsp
+  Step 18: 0x465194:	or	eax, 0x4000000
+  Step 19: 0x465199:	test	r8, r8
+  Step 20: 0x46519c:	movups	xmmword ptr [rsp + 0x38], xmm2
+  Step 21: 0x4651a1:	cdqe	
+  Step 22: 0x4651a3:	movups	xmmword ptr [rsp + 0x48], xmm3
+  Step 23: 0x4651a8:	mov	qword ptr [rsp + 8], rax
+  Step 24: 0x4651ad:	lea	rax, [rip - 0xa4]
+  Step 25: 0x4651b4:	mov	qword ptr [rsp + 0x10], rax
+  Step 26: 0x4651b9:	mov	eax, 0
+  Step 27: 0x4651be:	cmove	rdx, rax
+  Step 28: 0x4651c2:	movups	xmmword ptr [rsp + 0x58], xmm4
+  Step 29: 0x4651c7:	movups	xmmword ptr [rsp + 0x68], xmm5
+  Step 30: 0x4651cc:	movups	xmmword ptr [rsp + 0x78], xmm6
+  Step 31: 0x4651d1:	movups	xmmword ptr [rsp + 0x88], xmm7
+  Step 32: 0x4651d9:	mov	r10d, 8
+  Step 33: 0x4651df:	mov	eax, 0xd
+  Step 34: 0x4651e4:	syscall	
 
 === End of Export ===

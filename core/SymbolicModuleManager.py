@@ -455,7 +455,7 @@ class SymbolicModuleManager:
         if has_algebraic:
             print("[getSlice] Detected algebraic lines => using build_algebraic_pattern.")
             self.template_builder = TemplateBuilder(self.cfg_analysis.project, CF)
-            return self.template_builder.build_algebraic_pattern(PD)
+            return self.template_builder.build_generalized_algebraic_pattern(PD)
         else:
             # Old logic (flatten tokens, look for X, or fallback to start/end)
             if isinstance(PD.elements, list) and len(PD.elements) > 0:
